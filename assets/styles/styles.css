@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 		letter-spacing: 0;
 		border-radius: 45px;
 		height: auto;
-		padding: .8em 2.1em;
+		padding: .8em 1.1em;
 }
 
 .my-button:hover {
@@ -46,18 +46,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
-/*#my-modal {
-	display: none;
-}
-
-.my-form {
-	margin-top: 20em;
-}
-
-.custombox-content {
-	background: #212332;
-}*/
 
 /**********************************/
 
@@ -258,25 +246,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*** Footer Call-to-action ***/
 #footer-cta {
 	background-color: rgba(255, 103, 68, 0.91);
@@ -332,4 +301,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
 	color: #7d7d7d;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .my-button{
+		padding: 0.8em 0.1rem;
+	}
+	.my-button:hover {
+		cursor: pointer;
+		padding: .8em 0.1em;
+	}
 }
