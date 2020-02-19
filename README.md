@@ -4,7 +4,7 @@
 
 >Here i'm show my projects that I was working in my life. 
 
-I tried leve here fews informations about me, how contact me and a quick description about this projects
+This project was completed with HTML and CSS, and various scripts like Foundation, Custombox, jQCloud, and of course jQuery.
 
 ## Installation
 
@@ -36,6 +36,6 @@ Working here with HTML and CSS, use fews scripts done, like fondation, custobox,
 
 Github [https://github.com/digomes87](https://github.com/digomes87/) 
 
-See Here this project [https://github.com/digomes87/wttd-eventex](Bike)
+See this project here [https://github.com/digomes87/wttd-eventex](Bike)
 
 Version for preview [https://eventex-diego.herokuapp.com] (Eventex In heroku)
