@@ -35,7 +35,7 @@ Working here with HTML and CSS, use fews scripts done, like fondation, custobox,
 
 
 Github [https://github.com/digomes87](https://github.com/digomes87/) 
-
-See this project here [https://github.com/digomes87/wttd-eventex](Bike)
+* Another projects: 
+Eventex [https://github.com/digomes87/wttd-eventex](Eventex)
 
 Version for preview [https://eventex-diego.herokuapp.com] (Eventex In heroku)
