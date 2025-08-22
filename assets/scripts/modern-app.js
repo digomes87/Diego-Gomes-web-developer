@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTypingEffect();
     initializeContactForm();
     initializeAnimations();
+    updateCurrentYear();
     
     console.log('Modern Portfolio App initialized successfully!');
 });
@@ -219,7 +220,18 @@ function debounce(func, wait) {
 }
 
 // Export functions for external use
+// Update current year in footer
+function updateCurrentYear() {
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        const currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+        console.log(`Footer year updated to: ${currentYear}`);
+    }
+}
+
 window.ModernApp = {
     showNotification,
-    debounce
+    debounce,
+    updateCurrentYear
 };
