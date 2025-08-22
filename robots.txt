@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://diego-gomes.dev/sitemap.xml
+
+# Disallow crawling of assets that don't need indexing
+Disallow: /assets/js/
+Disallow: /assets/styles/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow crawling of images for better SEO
+Allow: /assets/images/
+
+# Crawl delay (optional)
+Crawl-delay: 1

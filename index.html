@@ -1,259 +1,764 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
-    <title>Web Developer-Diego Gomes</title>
-    <script src="assets/scripts/jquery.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="assets/styles/foundation.min.css">
-    <link rel="stylesheet" href="assets/styles/jqcloud.min.css">
-    <link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
-    <link href="assets/styles/custombox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
-    <script src="assets/styles/normalize.css" charset="utf-8"></script>
-    <script src="assets/scripts/foundation.min.js" charset="utf-8"></script>
-    <script src="assets/scripts/typed.min.js" charset="utf-8"></script>
-    <script src="assets/scripts/jqcloud.min.js" charset="utf-8"></script>
-    <script src="assets/scripts/custombox.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Diego Gomes | Data Engineer & Software Developer | Python, Java, Node.js</title>
+    <meta name="description" content="Engenheiro de Dados e Desenvolvedor de Software especializado em Python, PySpark, Java, Node.js e tecnologias de nuvem. 18+ anos de experiência em análise de dados, detecção de fraudes e arquiteturas escaláveis.">
+    <meta name="keywords" content="Diego Gomes, Data Engineer, Software Developer, Python, Java, Node.js, PySpark, AWS, Machine Learning, Data Analysis, Full Stack Developer, Engenheiro de Dados">
+    <meta name="author" content="Diego Gomes">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diego-gomes.dev">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://diego-gomes.dev">
+    <meta property="og:title" content="Diego Gomes | Data Engineer & Software Developer">
+    <meta property="og:description" content="Engenheiro de Dados e Desenvolvedor de Software especializado em Python, PySpark, Java, Node.js e tecnologias de nuvem. 18+ anos de experiência.">
+    <meta property="og:image" content="https://diego-gomes.dev/assets/images/portifolio.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Diego Gomes Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://diego-gomes.dev">
+    <meta property="twitter:title" content="Diego Gomes | Data Engineer & Software Developer">
+    <meta property="twitter:description" content="Engenheiro de Dados e Desenvolvedor de Software especializado em Python, PySpark, Java, Node.js e tecnologias de nuvem.">
+    <meta property="twitter:image" content="https://diego-gomes.dev/assets/images/portifolio.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Diego Gomes",
+      "jobTitle": "Data Engineer & Software Developer",
+      "description": "Engenheiro de Dados e Desenvolvedor de Software especializado em Python, PySpark, Java, Node.js e tecnologias de nuvem",
+      "url": "https://diego-gomes.dev",
+      "email": "diego.gomes87@gmail.com",
+      "sameAs": [
+        "https://linkedin.com/in/diego-go",
+        "https://github.com/diego-gomes"
+      ],
+      "knowsAbout": [
+        "Python", "Java", "Node.js", "PySpark", "AWS", "Data Engineering", 
+        "Machine Learning", "Software Development", "Cloud Computing"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidade Cruzeiro do Sul"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TCS/Itaú"
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Performance & SEO -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/modern-styles.css">
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-
 <body>
-    <div class="wrapper">
-        <div class="thin-bar">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DG</span>
+                <div class="logo-matrix"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
 
-        <section id="about">
-            <div class="row">
-                <div class="small-12 large-8 large-offset-2 columns text-center">
-                    <img class="img-circle" src="assets/images/eu.jpg" alt="headshot">
-                    <div class="details">
-                        <h2>Hi, I'm Diego. I'm a Web Developer<br> <span id="writing-text"><span></h2>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Diego Gomes</span>
+                    <span class="role">Data Engineer & Software Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Specialized in building scalable data pipelines, fraud detection systems, and cloud architectures. 
+                    Passionate about <span class="highlight">AI</span>, <span class="highlight">Data Science</span>, and <span class="highlight">Engineering Excellence</span>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="https://github.com/digomes87" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        View GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <span class="window-title">data_pipeline.py</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="keyword">from</span> <span class="module">pyspark.sql</span> <span class="keyword">import</span> SparkSession
+<span class="keyword">import</span> <span class="module">pandas</span> <span class="keyword">as</span> <span class="module">pd</span>
+
+<span class="keyword">def</span> <span class="function">process_fraud_data</span>():
+    <span class="comment"># Real-time fraud detection</span>
+    spark = SparkSession.builder \
+        .appName(<span class="string">"FraudDetection"</span>) \
+        .getOrCreate()
+    
+    <span class="keyword">return</span> spark.sql(<span class="string">"""
+        SELECT transaction_id, risk_score
+        FROM transactions 
+        WHERE risk_score > 0.8
+    """</span>)</code></pre>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="small-12 column">
-                    <div class="cta text-center">
-                        <a class="my-button cta-button expand form-button" href="mailto:diego.gomes87@gmail.com">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="small-12 column">
-                    <div class="my-arrow-div text-center">
-                        <a href="https://github.com/digomes87" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
-                        <a href="https://twitter.com/devdiegogo" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/diego-go" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                    </div>
-                </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
             </div>
-        </section>
-
-        <section id="work">
-            <h2 class="text-center">Work</h2>
-            <div class="row"></div>
-
-            <div class="row work-row">
-                <!-- odd -->
-                <div class="small-12 medium-6 medium-push-6 columns">
-                    <img src="assets/images/wtt.png" alt="">
-                </div>
-                <div class="small-12 medium-5 medium-pull-7 columns">
-                    <div class="details details-ftm">
-                        <h3>Eventex: Event-Planning Site</h3>
-                        <p class="platform">Web</p>
-                        <p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-                        <p>An event information website, built quickly with Django for a Brazilian-based conference.
-												<h3>Stack Applied</h3>
-												<ul>
-													<li>Python Django</li>
-													<li>Postgres</li>
-													<li>Heroku</li>
-													<li>Html/Css</li>
-													<li>Git</li>
-												</ul>
-											</p>
-												<p>You can see the source here <a href="https://github.com/digomes87/wttd-eventex">Github</a></p>
-                        <a class="my-button" target="_blank" href="https://eventex-diego.herokuapp.com">My Dev Version</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row work-row">
-                <!-- even -->
-                <div class="small-12 medium-6 columns">
-                    <img src="assets/images/php.png" alt="">
-                </div>
-                <div class="small-12 medium-5 medium-offset-1 columns">
-                    <div class="details details-ftm">
-                        <h3>A Casa do Concurseiro</h3>
-                        <p class="platform">Web</p>
-												<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-												<p>
-													<h3>Stack Applied</h3>
-												<ul>
-													<li>Php</li>
-													<li>Laravel</li>
-													<li>MySQL</li>
-													<li>Aws</li>
-												</ul>
-												</p>
-                                                <p>Undoubtedly one of the most demanding projects of my life due to my lack of experience at the 
-                                                   time, but I am happy to see that the project is still online today. I worked on the first 
-                                                   version of this project. After my departure, the project continued to evolve. Because the 
-                                                   source code is proprietary, I can't make it available, but what I can say about this project 
-                                                   is that it was very relevant to my life. At the time I did not have much experience with 
-                                                   large-scale projects, so it was undoubtedly a big shock to have to create a project that would 
-                                                   deal with so much traffic.</p>
-                        <a class="my-button" target="_blank" href="http://acasadoconcurseiro.com.br/">Visit Website</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row work-row">
-                <!-- odd -->
-                <div class="small-12 medium-6 medium-push-6 columns">
-                    <img src="assets/images/rails.png" alt="">
-                </div>
-                <div class="small-12 medium-5 medium-pull-7 columns">
-                    <div class="details details-ftm">
-                        <h3>Facebook Mini-Clone</h3>
-                        <p class="platform">Web</p>
-                        <p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-                        <p>A Facebook mini-clone built in Rails. The app recreates some of Facebook's basic functions, such as the ability to add or remove friends, send messages, and like/unlike posts.
-													<h3>Stack Applied</h3>
-												<ul>
-													<li>Rails</li>
-													<li>Heroku</li>
-													<li>Postgres</li>
-												</ul>
-												</p>
-												<p>Source here <a href="https://github.com/yochiwarez/Final-Project">Github</a></p>
-                        <a class="my-button" target="_blank" href="https://mc-rails-final-project.herokuapp.com/users/sign_in">You can see Here</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row work-row">
-                <!-- even -->
-                <div class="small-12 medium-6 columns">
-                    <img src="assets/images/bike.jpg" alt="">
-                </div>
-                <div class="small-12 medium-5 medium-offset-1 columns">
-                    <div class="details details-ftm">
-                        <h3>Bike Sales</h3>
-                        <p class="platform">Web</p>
-                        <p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-                        <p>This template was built in with html and Css and created for a local vintage bike company
-													<h3>Stack Applied</h3>
-												<ul>
-													<li>Html/Css</li>
-													<li>Git</li>
-													<li>Javascript</li>
-												</ul>
-												</p>
-												<p>Source here <a href="https://github.com/digomes87/bike">Github</a></p>
-                        <a class="my-button" target="_blank" href="https://digomes87.github.io/bike/">Visit Website</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="experience">
-            <div class="row column">
-                <div class="small-12">
-                    <h2 class="text-center">Skills</h2>
-                    <p class="text-center tag-line">Specialist at work. Generalist at heart.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="small-12 medium-4 columns text-center experience-topics">
-                    <i class="fi-laptop"></i>
-                    <h3>Front-end</h3>
-                    <ul>
-                        <li>Html(5)</li>
-                        <li>Css(3)</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>Bootstrap</li>
-                        <li>Semantics-UI</li>
-                        <li>Api | Ajax</li>
-                    </ul>
-                </div>
-                <div class="small-12 medium-4 columns text-center experience-topics">
-                    <i class="fi-database"></i>
-                    <h3>Back-end</h3>
-                    <ul>
-                        <li>NodeJS</li>
-                        <li>NPM</li>
-                        <li>SQL</li>
-                        <li>Mongo</li>
-                        <li>Restful Web Services</li>
-                        <li>Flask | Django</li>
-                        <li>Heroku</li>
-                    </ul>
-                </div>
-                <div class="small-12 medium-4 columns text-center experience-topics">
-                    <i class="fi-star"></i>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Vim</li>
-                        <li>Atom || Webstorm</li>
-                        <li>Github && Bitbucket</li>
-                        <li>SSH</li>
-                        <li>PyCharm</li>
-                        <li>Linux</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="teaching">
-            <h2 class="text-center">Motivation</h2>
-            <div class="row">
-                <div class="small-12 medium-8 medium-offset-2">
-                    <p class="text-center tag-line">
-                        I am an extremely hard-working person. I enjoy working with Django, Python, and Javascript. I've been through challenges that demanded a lot from me, but I'm happy to have overcome them, and am now looking for my next software development role
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate <strong>Data Engineer</strong> and <strong>Software Developer</strong> with expertise in building 
+                        large-scale data processing systems and fraud detection platforms. Currently working at <strong>TCS/Itaú</strong>, 
+                        where I develop real-time transaction monitoring systems that process millions of transactions daily.
                     </p>
-                    <p class="text-center tag-line">If there is anything I can help with, please contact me!</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="footer-cta">
-            <h2 class="text-center">Wanna work with me?</h2>
-            <p></p>
-            <div class="row text-center">
-                <div class="small-12 medium-8 medium-offset-2 columns">
-                    <p class="text-center">I'm currently available for work.</p>
-                </div>
-                <div class="small-12 columns" id="startButtonDiv">
-                    <a class="my-button form-button" href="mailto:diego.gomes87@gmail.com">Start Now</a>
-                </div>
-            </div>
-        </section>
-
-        <footer id="footer">
-            <div class="row text-center">
-                <div class="small-12 medium-6 medium-offset-3 columns">
-                    <p id="logo">DG</p>
-										<p></p>
-										<div class="my-arrow-div text-center">
-                        <a href="https://github.com/digomes87" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
-                        <a href="https://twitter.com/devdiegogo" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/diego-go" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <p>
+                        From crafting elegant web interfaces to architecting robust data pipelines that process <strong>millions of transactions</strong> 
+                        in real-time, my journey has been driven by an insatiable curiosity for solving complex problems. Specializing in 
+                        <strong>Python</strong>, <strong>PySpark</strong>, and <strong>cloud-native architectures</strong>, I transform raw data 
+                        into actionable intelligence that powers critical business decisions.
+                    </p>
+                    <p>
+                        Armed with a <strong>Bachelor's in Computer and Information Systems Security</strong> (Universidade Cruzeiro do Sul) 
+                        and an <strong>MBA in Full Cycle Architecture</strong> (Full Cycle), I bridge the gap between cutting-edge technology 
+                        and strategic business outcomes. Currently expanding my expertise through advanced studies in <strong>Applied AI</strong> 
+                        at UFPR and <strong>Data Engineering</strong> at PUC Minas, I'm at the forefront of the AI revolution.
+                    </p>
+                    <p>
+                        As a <strong>Full Cycle Architecture specialist</strong>, I orchestrate the entire development ecosystem—from 
+                        conceptual design to production deployment. My approach combines deep technical mastery with entrepreneurial vision, 
+                        having founded and led DG Tech Solutions for 7 years, delivering scalable, secure, and innovative solutions that 
+                        drive digital transformation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">18+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Academic Degrees & Specializations</span>
+                        </div>
                     </div>
-                    <p id="copyright">Copyright &copy; 2020 | Diego Gomes</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="assets/images/eu.jpg" alt="Diego Gomes" class="profile-image">
+                        <div class="image-overlay">
+                            <div class="matrix-rain"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
-    <script src="assets/scripts/app.js" charset="utf-8"></script>
-</body>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>CEO & Founder</h3>
+                            <span class="company">DG Tech Solutions</span>
+                            <span class="period">January 2015 - December 2022</span>
+                        </div>
+                        <p>Founded and managed technology consulting company for 7 years, specializing in data engineering solutions and web development. Led strategic planning, business development, and technical architecture decisions. Managed client relationships, project delivery, and team coordination. Developed custom data processing solutions, web applications, and business intelligence systems for various industries. Successfully grew the company from startup to established consulting firm with multiple enterprise clients.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Django</span>
+                            <span class="tech">Data Engineering</span>
+                            <span class="tech">Business Intelligence</span>
+                            <span class="tech">Project Management</span>
+                            <span class="tech">Strategic Planning</span>
+                            <span class="tech">Team Leadership</span>
+                            <span class="tech">Client Relations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Data Engineer</h3>
+                            <span class="company">TCS/Itaú</span>
+                            <span class="period">December 2022 - Present</span>
+                        </div>
+                        <p>Leading fraud investigation team for banking platform, processing real-time transaction data and cross-referencing databases to detect fraud indicators. Developed and optimized PySpark jobs on Databricks to process large-scale data, enhancing visibility into fraudulent activities. Built Flask-based project with interactive Dashboard for analysts. Extensively used PySpark for data processing and built data pipelines orchestrated with Oozie. Integrated and maintained data solutions using MS SQL Server, Snowflake, AWS Redshift, Athena, and Data Lake.</p>
+                        <div class="tech-stack">
+                            <span class="tech">PySpark</span>
+                            <span class="tech">Databricks</span>
+                            <span class="tech">Flask</span>
+                            <span class="tech">Django</span>
+                            <span class="tech">Vue.js</span>
+                            <span class="tech">AWS Redshift</span>
+                            <span class="tech">Snowflake</span>
+                            <span class="tech">Power BI</span>
+                            <span class="tech">Tableau</span>
+                            <span class="tech">Docker</span>
+                            <span class="tech">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Lead Developer & Data Engineer</h3>
+                            <span class="company">NT Consult</span>
+                            <span class="period">December 2021 - December 2022</span>
+                        </div>
+                        <p>Led API integration across project platforms and designed scalable data pipelines using PySpark and Spark SQL within Databricks environment. Developed and maintained new features to enhance system performance. Managed development team, performed systems analysis, and participated in client meetings. Utilized Oozie for workflow orchestration to automate ETL processes running on Hadoop clusters.</p>
+                        <div class="tech-stack">
+                            <span class="tech">PySpark</span>
+                            <span class="tech">Databricks</span>
+                            <span class="tech">Spark SQL</span>
+                            <span class="tech">Django</span>
+                            <span class="tech">Flask</span>
+                            <span class="tech">FastAPI</span>
+                            <span class="tech">Kubernetes</span>
+                            <span class="tech">Docker</span>
+                            <span class="tech">GitLab CI/CD</span>
+                            <span class="tech">PostgreSQL</span>
+                            <span class="tech">GCP</span>
+                            <span class="tech">Hadoop</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>API Developer & Data Engineer</h3>
+                            <span class="company">Medway</span>
+                            <span class="period">October 2020 - October 2022</span>
+                        </div>
+                        <p>API Developer focused on development of Content and Student Management Platform. Supported data engineering tasks by developing PySpark scripts for data transformation and aggregation. Responsibilities included developing new products, adding features, and maintaining the system. Conducted system and database performance analysis. Managed new product development, performed systems analysis, and collaborated within Scrum.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">PySpark</span>
+                            <span class="tech">Django</span>
+                            <span class="tech">PostgreSQL</span>
+                            <span class="tech">Scrum</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>FullStack Developer</h3>
+                            <span class="company">Bedin</span>
+                            <span class="period">January 2018 - December 2019</span>
+                        </div>
+                        <p>FullStack Developer responsible for managing internal infrastructure and implementing network enhancements. Provided support for both local and remote users. Administered HFSQL databases and maintained CakePHP application alongside MySQL database. Developed internal web applications focused on company control systems, including cash management, financial flow, sales tracking, and BI solutions using Python and Django.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Django</span>
+                            <span class="tech">CakePHP</span>
+                            <span class="tech">MySQL</span>
+                            <span class="tech">HFSQL</span>
+                            <span class="tech">Business Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Python Developer</h3>
+                            <span class="company">Visionnaire</span>
+                            <span class="period">January 2018 - December 2018</span>
+                        </div>
+                        <p>Python Developer hired as consultant to finalize essential modules for innovative product in aviation market. Focused on BackEnd development using Django 1.7 and PostgreSQL, ensuring robust and scalable solutions. Worked with AppEngine to deploy and manage application in cloud environment.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Django</span>
+                            <span class="tech">Python</span>
+                            <span class="tech">PostgreSQL</span>
+                            <span class="tech">Google AppEngine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portifolio.png" alt="Functional Front-End Layout" />
+                    </div>
+                    <div class="project-header">
+                        <h3>Functional Front-End Layout</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/digomes87/functional-front-end-layout" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Modern responsive front-end layout with advanced CSS Grid and Flexbox techniques, featuring dark theme and smooth animations.</p>
+                    <div class="tech-stack">
+                        <span class="tech">HTML5</span>
+                        <span class="tech">CSS3</span>
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">Responsive Design</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="#1a1a1a"/>
+                            <g transform="translate(50,50)">
+                                <rect x="0" y="0" width="40" height="80" fill="url(#grad1)" opacity="0.8"/>
+                                <rect x="50" y="20" width="40" height="60" fill="url(#grad1)" opacity="0.7"/>
+                                <rect x="100" y="10" width="40" height="70" fill="url(#grad1)" opacity="0.9"/>
+                                <rect x="150" y="30" width="40" height="50" fill="url(#grad1)" opacity="0.6"/>
+                                <rect x="200" y="5" width="40" height="75" fill="url(#grad1)" opacity="0.8"/>
+                                <rect x="250" y="25" width="40" height="55" fill="url(#grad1)" opacity="0.7"/>
+                            </g>
+                            <text x="200" y="130" text-anchor="middle" fill="#00d4ff" font-family="Arial" font-size="14">NYC Taxi Data Analysis</text>
+                            <text x="200" y="150" text-anchor="middle" fill="#888" font-family="Arial" font-size="12">Trip Patterns & ML Predictions</text>
+                        </svg>
+                    </div>
+                    <div class="project-header">
+                        <h3>NYC Taxi Data Analysis</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/digomes87/nyc-taxi-data-analysis" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Big data analysis of NYC taxi trips using PySpark and machine learning for pattern recognition and predictive modeling.</p>
+                    <div class="tech-stack">
+                        <span class="tech">PySpark</span>
+                        <span class="tech">Python</span>
+                        <span class="tech">Pandas</span>
+                        <span class="tech">Jupyter</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/rails.png" alt="Eventex Platform" />
+                    </div>
+                    <div class="project-header">
+                        <h3>Eventex - Event Platform</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/digomes87/eventex" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Django-based event registration platform with payment integration, user management, and real-time notifications.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Django</span>
+                        <span class="tech">Python</span>
+                        <span class="tech">PostgreSQL</span>
+                        <span class="tech">Heroku</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="beeGrad" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" style="stop-color:#ffeb3b;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="#1a1a1a"/>
+                            <g transform="translate(200,100)">
+                                <circle cx="-80" cy="-30" r="8" fill="url(#beeGrad)" opacity="0.8">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; 20,10; 0,0" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="-40" cy="20" r="6" fill="url(#beeGrad)" opacity="0.7">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; -15,15; 0,0" dur="4s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="30" cy="-20" r="7" fill="url(#beeGrad)" opacity="0.9">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; 10,-20; 0,0" dur="2.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="60" cy="30" r="5" fill="url(#beeGrad)" opacity="0.6">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; -25,5; 0,0" dur="3.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <polygon points="-100,-50 -80,-40 -90,-20" fill="#4caf50" opacity="0.7"/>
+                                <polygon points="80,-40 100,-30 90,-10" fill="#4caf50" opacity="0.7"/>
+                            </g>
+                            <text x="200" y="170" text-anchor="middle" fill="#ffeb3b" font-family="Arial" font-size="14">Bee Behavior Analysis</text>
+                            <text x="200" y="190" text-anchor="middle" fill="#888" font-family="Arial" font-size="12">ML Pattern Recognition</text>
+                        </svg>
+                    </div>
+                    <div class="project-header">
+                        <h3>Bee Behavior Analysis</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/digomes87/bee-behavior-analysis" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Data science project analyzing bee behavior patterns using Python, statistical analysis, and machine learning algorithms.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Python</span>
+                        <span class="tech">Pandas</span>
+                        <span class="tech">Scikit-learn</span>
+                        <span class="tech">Matplotlib</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/react.png" alt="Real-time Fraud Detection" />
+                    </div>
+                    <div class="project-header">
+                        <h3>Real-time Fraud Detection</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/digomes87/fraud-detection-system" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Advanced fraud detection system processing millions of transactions daily using machine learning and real-time analytics.</p>
+                    <div class="tech-stack">
+                        <span class="tech">PySpark</span>
+                        <span class="tech">Kafka</span>
+                        <span class="tech">AWS</span>
+                        <span class="tech">Machine Learning</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="#1a1a1a"/>
+                            <g transform="translate(200,100)">
+                                <ellipse cx="-60" cy="-20" rx="30" ry="15" fill="url(#cloudGrad)" opacity="0.8"/>
+                                <ellipse cx="0" cy="-30" rx="40" ry="20" fill="url(#cloudGrad)" opacity="0.9"/>
+                                <ellipse cx="60" cy="-15" rx="25" ry="12" fill="url(#cloudGrad)" opacity="0.7"/>
+                                <rect x="-80" y="10" width="160" height="40" fill="url(#cloudGrad)" opacity="0.6" rx="5"/>
+                                <circle cx="-40" cy="30" r="3" fill="#fff" opacity="0.8"/>
+                                <circle cx="0" cy="25" r="4" fill="#fff" opacity="0.9"/>
+                                <circle cx="40" cy="35" r="3" fill="#fff" opacity="0.7"/>
+                            </g>
+                            <text x="200" y="170" text-anchor="middle" fill="#667eea" font-family="Arial" font-size="14">Cloud Data Pipeline</text>
+                            <text x="200" y="190" text-anchor="middle" fill="#888" font-family="Arial" font-size="12">AWS & Databricks</text>
+                        </svg>
+                    </div>
+                    <div class="project-header">
+                        <h3>Cloud Data Pipeline</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/digomes87/cloud-data-pipeline" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Scalable data pipeline architecture on AWS with Databricks, processing terabytes of data for business intelligence.</p>
+                    <div class="tech-stack">
+                        <span class="tech">AWS</span>
+                        <span class="tech">Databricks</span>
+                        <span class="tech">Terraform</span>
+                        <span class="tech">Apache Spark</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill">Python</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">Rust</span>
+                        <span class="skill">C++</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">PL/SQL</span>
+                        <span class="skill">Shell Script</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Engineering & Analytics</h3>
+                    <div class="skill-items">
+                        <span class="skill">PySpark</span>
+                        <span class="skill">Apache Spark</span>
+                        <span class="skill">Databricks</span>
+                        <span class="skill">Apache Hadoop</span>
+                        <span class="skill">Apache Oozie</span>
+                        <span class="skill">Pandas</span>
+                        <span class="skill">NumPy</span>
+                        <span class="skill">Scikit-learn</span>
+                        <span class="skill">TensorFlow</span>
+                        <span class="skill">Power BI</span>
+                        <span class="skill">Tableau</span>
+                        <span class="skill">QuickSight</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
+                    <div class="skill-items">
+                        <span class="skill">AWS</span>
+                        <span class="skill">AWS Redshift</span>
+                        <span class="skill">AWS Athena</span>
+                        <span class="skill">Data Lake</span>
+                        <span class="skill">GCP</span>
+                        <span class="skill">Docker</span>
+                        <span class="skill">Kubernetes</span>
+                        <span class="skill">Terraform</span>
+                        <span class="skill">GitLab CI/CD</span>
+                        <span class="skill">Git</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill">PostgreSQL</span>
+                        <span class="skill">MySQL</span>
+                        <span class="skill">MS SQL Server</span>
+                        <span class="skill">Snowflake</span>
+                        <span class="skill">HFSQL</span>
+                        <span class="skill">Oracle</span>
+                        <span class="skill">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <span class="skill">Django</span>
+                        <span class="skill">Flask</span>
+                        <span class="skill">FastAPI</span>
+                        <span class="skill">Spring Boot</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Redux</span>
+                        <span class="skill">Vue.js</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">CakePHP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill">Artificial Intelligence</span>
+                        <span class="skill">Machine Learning</span>
+                        <span class="skill">Data Analysis</span>
+                        <span class="skill">Statistical Modeling</span>
+                        <span class="skill">Predictive Analytics</span>
+                        <span class="skill">Business Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to collaborate?</h3>
+                    <p>I'm always interested in discussing new opportunities, innovative projects, and challenging problems in data engineering and software development.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:diego.gomes87@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>diego.gomes87@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/diego-go" target="_blank" class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/digomes87" target="_blank" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <span class="terminal-title">diego@portfolio:~$</span>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="prompt">diego@portfolio:~$</span>
+                                <span class="command">whoami</span>
+                            </div>
+                            <div class="terminal-output">Data Engineer & Software Developer</div>
+                            <div class="terminal-line">
+                                <span class="prompt">diego@portfolio:~$</span>
+                                <span class="command">cat interests.txt</span>
+                            </div>
+                            <div class="terminal-output">
+                                • AI & Machine Learning<br>
+                                • Data Engineering<br>
+                                • Cloud Architecture<br>
+                                • Science Fiction<br>
+                                • Mathematics
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">diego@portfolio:~$</span>
+                                <span class="cursor">_</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">DG</span>
+                    </div>
+                    <p>&copy; 2024 Diego Gomes. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/digomes87" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/diego-go" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/devdiegogo" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/scripts/particles-config.js"></script>
+    <script src="assets/scripts/modern-app.js"></script>
+</body>
 </html>

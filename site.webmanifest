@@ -1,0 +1,24 @@
+{
+  "name": "Diego Gomes - Data Engineer & Software Developer",
+  "short_name": "Diego Gomes",
+  "description": "Portfólio profissional de Diego Gomes - Engenheiro de Dados e Desenvolvedor de Software",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR"
+}
