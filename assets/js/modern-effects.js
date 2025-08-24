@@ -306,9 +306,17 @@ function initMobileMenu() {
     
     if (!hamburger || !navMenu) return;
     
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
         hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
+        navMenu.classList.toggle('mobile-active');
+        
+        // Prevent body scroll when menu is open
+        if (navMenu.classList.contains('mobile-active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     });
     
     // Close menu when clicking on a link
@@ -316,8 +324,27 @@ function initMobileMenu() {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            navMenu.classList.remove('mobile-active');
+            document.body.style.overflow = '';
         });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('mobile-active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Close menu on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('mobile-active');
+            document.body.style.overflow = '';
+        }
     });
 }
 
