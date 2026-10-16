@@ -34,6 +34,25 @@ python3 -m http.server 8000
 npx serve .
 ```
 
+## 🔀 Development Workflow
+
+- `develop` is the integration branch; `main` is what runs in production.
+- Work happens on a feature branch and reaches `develop` through a pull request.
+- A pull request from `develop` to `main` releases the site.
+- Both branches are protected: changes land only through pull requests with a green CI.
+
+**CI** (`.github/workflows/ci.yml`) runs on every pull request to `main` or `develop` and on every push to `develop`:
+HTML validation, local link check and browser tests (desktop and mobile Chromium).
+
+**Deploy** (`.github/workflows/deploy.yml`) runs on every push to `main`: it runs CI again and only then publishes to GitHub Pages.
+
+```bash
+npm install
+npx playwright install chromium
+npm run lint:html   # HTML validation
+npm run test:e2e    # browser tests against a local server
+```
+
 ## 🎯 About The Project
 
 This portfolio showcases my professional journey as a Data Engineer and Software Developer with 18+ years of experience. It highlights my expertise in:
