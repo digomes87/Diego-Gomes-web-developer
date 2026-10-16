@@ -1,0 +1,72 @@
+name: Promote
+
+# Releases develop to main once CI passes on a push to develop.
+# Merges made with GITHUB_TOKEN do not trigger push workflows, so Deploy is dispatched explicitly.
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [develop]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: promote
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    name: Promote develop to main
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      TESTED_SHA: ${{ github.event.workflow_run.head_sha }}
+    steps:
+      - name: Skip when develop moved past the tested commit
+        id: freshness
+        run: |
+          current_sha=$(gh api "repos/$GH_REPO/branches/develop" --jq .commit.sha)
+          if [ "$current_sha" != "$TESTED_SHA" ]; then
+            echo "develop is at $current_sha, CI tested $TESTED_SHA; the newer run will promote."
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "stale=false" >> "$GITHUB_OUTPUT"
+
+      - name: Skip when main already has everything
+        id: changes
+        if: steps.freshness.outputs.stale == 'false'
+        run: |
+          ahead_by=$(gh api "repos/$GH_REPO/compare/main...develop" --jq .ahead_by)
+          echo "develop is $ahead_by commit(s) ahead of main"
+          echo "pending=$([ "$ahead_by" -gt 0 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
+      - name: Open or reuse release pull request
+        id: release
+        if: steps.changes.outputs.pending == 'true'
+        run: |
+          number=$(gh pr list --base main --head develop --state open --json number --jq '.[0].number // empty')
+          if [ -z "$number" ]; then
+            url=$(gh pr create --base main --head develop \
+              --title "Release: develop to main" \
+              --body "Automatic release of \`develop\` at ${TESTED_SHA} after CI passed.")
+            number=${url##*/}
+          fi
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Merge release pull request
+        if: steps.changes.outputs.pending == 'true'
+        run: gh pr merge "${{ steps.release.outputs.number }}" --merge --match-head-commit "$TESTED_SHA"
+
+      - name: Deploy main
+        if: steps.changes.outputs.pending == 'true'
+        run: gh workflow run deploy.yml --ref main
