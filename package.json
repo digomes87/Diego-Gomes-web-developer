@@ -1,0 +1,13 @@
+{
+  "name": "diego-gomes-portfolio",
+  "private": true,
+  "scripts": {
+    "lint:html": "html-validate index.html",
+    "test:e2e": "playwright test",
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "html-validate": "10.1.2"
+  }
+}
