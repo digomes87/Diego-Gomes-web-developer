@@ -38,13 +38,15 @@ npx serve .
 
 - `develop` is the integration branch; `main` is what runs in production.
 - Work happens on a feature branch and reaches `develop` through a pull request.
-- A pull request from `develop` to `main` releases the site.
+- When CI passes on a push to `develop`, the **Promote** workflow opens a `develop` to `main` pull request, merges it and deploys. No manual release step.
 - Both branches are protected: changes land only through pull requests with a green CI.
 
 **CI** (`.github/workflows/ci.yml`) runs on every pull request to `main` or `develop` and on every push to `develop`:
 HTML validation, local link check and browser tests (desktop and mobile Chromium).
 
 **Deploy** (`.github/workflows/deploy.yml`) runs on every push to `main`: it runs CI again and only then publishes to GitHub Pages.
+
+**Promote** (`.github/workflows/promote.yml`) runs after CI succeeds on `develop`. It skips if `develop` moved on since the tested commit or if `main` is already up to date.
 
 ```bash
 npm install
