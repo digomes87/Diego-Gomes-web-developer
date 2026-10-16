@@ -380,6 +380,127 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="section-line"></div>
             </div>
+
+            <div class="spotlight">
+                <p class="spotlight-kicker">Own products</p>
+                <h3 id="spotlight-heading" class="spotlight-title">Designed, built and shipped end to end</h3>
+                <p class="spotlight-intro">Independent projects I own from idea to production: architecture, code, tests, CI/CD and deployment. All four are live and open source.</p>
+
+                <article class="feature">
+                    <a class="feature-media" href="https://digomes87.github.io/SkyPulse/" target="_blank" rel="noopener">
+                        <img src="assets/images/projects/skypulse.webp" width="960" height="600" loading="lazy" alt="SkyPulse overview page showing expected EU261 compensation for a replayed day">
+                    </a>
+                    <div class="feature-body">
+                        <span class="feature-index">01 · Data platform</span>
+                        <h3>SkyPulse</h3>
+                        <p class="feature-pitch">Real-time flight disruption and EU261 exposure platform for European air traffic. Ingests live aircraft positions, schedules and airport weather, detects delays and cancellations as they happen and prices each one against EU Regulation 261/2004.</p>
+                        <ul class="feature-highlights">
+                            <li>Streaming pipeline into a Delta Lake bronze/silver/gold lakehouse</li>
+                            <li>Fully tested EU261 rules engine with METAR weather exemptions</li>
+                            <li>Delay prediction model tracked in MLflow and served over FastAPI</li>
+                            <li>Runs locally on docker-compose + LocalStack, deploys to AWS with Terraform</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Kafka / Kinesis</span>
+                            <span class="tech">Spark</span>
+                            <span class="tech">dbt</span>
+                            <span class="tech">Airflow</span>
+                            <span class="tech">Terraform</span>
+                        </div>
+                        <div class="feature-actions">
+                            <a class="feature-button feature-button-primary" href="https://digomes87.github.io/SkyPulse/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+                            <a class="feature-button" href="https://github.com/digomes87/SkyPulse" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <a class="feature-media" href="https://digomes87.github.io/PlaySysDesigner/" target="_blank" rel="noopener">
+                        <img src="assets/images/projects/playsysdesigner.webp" width="960" height="600" loading="lazy" alt="PlaySysDesigner home screen with the predict, build, run, diagnose and justify loop">
+                    </a>
+                    <div class="feature-body">
+                        <span class="feature-index">02 · Learning game</span>
+                        <h3>PlaySysDesigner</h3>
+                        <p class="feature-pitch">A system design game in the spirit of tower defense. Build an architecture, push simulated traffic through it and watch what breaks. Every level makes you predict, build, run, diagnose and justify, so the concepts actually stick.</p>
+                        <ul class="feature-highlights">
+                            <li>Plain TypeScript simulation engine: ticks, routing, capacity, SLOs</li>
+                            <li>Levels on scaling, caching, replication lag, queues and rate limiting</li>
+                            <li>Spaced repetition question pools, progress in IndexedDB</li>
+                            <li>Bilingual (EN / PT-BR), Vitest + Playwright in CI</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">TypeScript</span>
+                            <span class="tech">React</span>
+                            <span class="tech">React Flow</span>
+                            <span class="tech">Zustand</span>
+                            <span class="tech">Playwright</span>
+                        </div>
+                        <div class="feature-actions">
+                            <a class="feature-button feature-button-primary" href="https://digomes87.github.io/PlaySysDesigner/" target="_blank" rel="noopener"><i class="fas fa-play" aria-hidden="true"></i> Play</a>
+                            <a class="feature-button" href="https://github.com/digomes87/PlaySysDesigner" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <a class="feature-media" href="https://digomes87.github.io/PlayGrua/" target="_blank" rel="noopener">
+                        <img src="assets/images/projects/playgrua.webp" width="960" height="600" loading="lazy" alt="PlayGrua mission menu with crane controls and joystick settings">
+                    </a>
+                    <div class="feature-body">
+                        <span class="feature-index">03 · 3D simulator</span>
+                        <h3>PlayGrua</h3>
+                        <p class="feature-pitch">A tower crane operation simulator that runs entirely in the browser. Not an arcade game: the crane has inertia, the load swings like a real pendulum, the load moment limiter blocks motions and the wind pushes both load and jib.</p>
+                        <ul class="feature-highlights">
+                            <li>Physics-based 3D simulation with Three.js</li>
+                            <li>Six missions from basic lift to 5 t beams in 40 km/h gusts</li>
+                            <li>Deterministic engine: replays re-run the recorded commands</li>
+                            <li>Keyboard and gamepad, tested on Chrome, Firefox and WebKit</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">TypeScript</span>
+                            <span class="tech">Three.js</span>
+                            <span class="tech">Vite</span>
+                            <span class="tech">Vitest</span>
+                            <span class="tech">Playwright</span>
+                        </div>
+                        <div class="feature-actions">
+                            <a class="feature-button feature-button-primary" href="https://digomes87.github.io/PlayGrua/" target="_blank" rel="noopener"><i class="fas fa-play" aria-hidden="true"></i> Play</a>
+                            <a class="feature-button" href="https://github.com/digomes87/PlayGrua" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <a class="feature-media" href="https://digomes87.github.io/PlayKids/" target="_blank" rel="noopener">
+                        <img src="assets/images/projects/playkids.webp" width="960" height="600" loading="lazy" alt="PlayKids chapter selection screen with colourful chapter cards">
+                    </a>
+                    <div class="feature-body">
+                        <span class="feature-index">04 · Kids PWA</span>
+                        <h3>PlayKids</h3>
+                        <p class="feature-pitch">A musical maths game for children. The music plays, a challenge appears (count shapes, solve a sum, recognise a spoken number) and the child answers on the beat. The tempo adapts to how well they are doing.</p>
+                        <ul class="feature-highlights">
+                            <li>Media-clock rhythm engine decoupled from React and the DOM</li>
+                            <li>Adaptive tempo and per-device latency calibration</li>
+                            <li>Offline PWA, no analytics or third-party SDKs, progress stays on device</li>
+                            <li>E2E tested on iPad (WebKit) and Android tablet (Chromium)</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech">TypeScript</span>
+                            <span class="tech">React</span>
+                            <span class="tech">PWA</span>
+                            <span class="tech">IndexedDB</span>
+                            <span class="tech">Zod</span>
+                        </div>
+                        <div class="feature-actions">
+                            <a class="feature-button feature-button-primary" href="https://digomes87.github.io/PlayKids/" target="_blank" rel="noopener"><i class="fas fa-play" aria-hidden="true"></i> Play</a>
+                            <a class="feature-button" href="https://github.com/digomes87/PlayKids" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="projects-subtitle">More projects</h3>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
