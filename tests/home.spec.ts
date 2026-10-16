@@ -1,6 +1,8 @@
 import { test, expect, type Page } from '@playwright/test';
 
-const OWN_PRODUCTS = ['SkyPulse', 'PlaySysDesigner', 'PlayGrua', 'PlayKids'];
+const PLAY_SERIES = ['PlaySysDesigner', 'PlayGrua', 'PlayKids', 'PlayPiano'];
+const OWN_PRODUCTS = ['SkyPulse', ...PLAY_SERIES];
+const SKILL_AREAS = 8;
 
 function collectLocalFailures(page: Page): string[] {
   const failures: string[] = [];
@@ -36,6 +38,28 @@ test('own products are featured with live and source links', async ({ page }) =>
     await expect(feature).toHaveCount(1);
     await expect(feature.locator(`a[href="https://github.com/digomes87/${name}"]`)).toHaveCount(1);
     await expect(feature.locator(`a.feature-button-primary[href="https://digomes87.github.io/${name}/"]`)).toHaveCount(1);
+  }
+});
+
+test('play series games live in their own section reachable from the nav', async ({ page }) => {
+  await page.goto('/');
+
+  const playSection = page.locator('section#play');
+  await expect(page.locator('.nav-menu a[href="#play"]')).toHaveCount(1);
+  for (const name of PLAY_SERIES) {
+    await expect(playSection.getByRole('heading', { name, exact: true })).toHaveCount(1);
+  }
+  await expect(playSection.locator('.feature')).toHaveCount(PLAY_SERIES.length);
+});
+
+test('skills are grouped by area with the core areas featured', async ({ page }) => {
+  await page.goto('/');
+
+  const tiles = page.locator('#skills .skill-tile');
+  await expect(tiles).toHaveCount(SKILL_AREAS);
+  await expect(page.locator('#skills .skill-tile--featured h3')).toHaveText(['Data Platform', 'Cloud Platforms']);
+  for (const tile of await tiles.all()) {
+    await expect(tile.locator('.skill').first()).toBeVisible();
   }
 });
 
