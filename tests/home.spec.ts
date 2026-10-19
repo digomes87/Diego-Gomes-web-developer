@@ -70,3 +70,49 @@ test('page has no horizontal overflow', async ({ page }) => {
 
   expect(overflow).toBeLessThanOrEqual(0);
 });
+
+test('hero search lists matching skills and jumps to the first result', async ({ page }) => {
+  await page.goto('/');
+
+  const results = page.locator('[data-stack-results]');
+  await page.getByRole('searchbox').fill('terraform');
+  await expect(results.getByRole('link', { name: /Terraform/ }).first()).toBeVisible();
+
+  await page.getByRole('searchbox').press('Enter');
+  await expect(page).toHaveURL(/#(skills|projects|play|experience)$/);
+  await expect(results).toBeHidden();
+});
+
+test('hero search explains when nothing matches', async ({ page }) => {
+  await page.goto('/');
+
+  await page.getByRole('searchbox').fill('cobol');
+
+  await expect(page.locator('[data-stack-results]')).toContainText('No match yet');
+});
+
+test('quick contact widget opens and closes with Escape', async ({ page }) => {
+  await page.goto('/');
+
+  const toggle = page.locator('.chat-toggle');
+  const panel = page.locator('#chat-panel');
+  await toggle.click();
+  await expect(panel).toBeVisible();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+
+  await page.keyboard.press('Escape');
+  await expect(panel).toBeHidden();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+});
+
+test('mobile menu toggles from the header button', async ({ page, isMobile }) => {
+  test.skip(!isMobile, 'menu button only shows on small screens');
+  await page.goto('/');
+
+  const toggle = page.locator('.nav-toggle');
+  await toggle.click();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+  await page.locator('.nav-menu a[href="#skills"]').click();
+
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+});

@@ -1,0 +1,132 @@
+:root {
+  --color-ink: #000;
+  --color-paper: #fff;
+  --color-primary: #009ee2;
+  --color-secondary: #e20613;
+  --color-grey: #6b6b6b;
+  --color-grey-light: #a4a4a4;
+  --color-line: #d8d8d8;
+  --color-wash: #f3f3f1;
+
+  --font-family: "Roboto Flex", Helvetica, Arial, sans-serif;
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  --text-small: 0.875rem;
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
+  --text-large: clamp(1.15rem, 1rem + 0.5vw, 1.5rem);
+  --text-intro: clamp(1.35rem, 1.1rem + 1vw, 1.875rem);
+  --text-title: clamp(2.5rem, 1.4rem + 4.6vw, 5rem);
+  --text-display: clamp(3rem, 1.2rem + 7vw, 7.5rem);
+
+  --space-gutter: clamp(1rem, 0.5rem + 2.5vw, 3rem);
+  --space-section: clamp(4rem, 2.5rem + 6vw, 9rem);
+  --container-width: 1440px;
+
+  --border: 2px solid var(--color-ink);
+  --border-light: 2px solid var(--color-paper);
+  --button-size: 54px;
+  --header-height: 76px;
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  color: var(--color-ink);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-secondary);
+  color: var(--color-paper);
+}
+
+.sprite {
+  display: none;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.icon--large {
+  width: 32px;
+  height: 32px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
