@@ -1,7 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 
 const PLAY_SERIES = ['PlaySysDesigner', 'PlayGrua', 'PlayKids', 'PlayPiano', 'PlayMate'];
-const OWN_PRODUCTS = ['SkyPulse', ...PLAY_SERIES];
 const SKILL_AREAS = 8;
 
 function collectLocalFailures(page: Page): string[] {
@@ -30,26 +29,36 @@ test('home page loads without broken local assets or script errors', async ({ pa
   expect(errors).toEqual([]);
 });
 
-test('own products are featured with live and source links', async ({ page }) => {
+test('SkyPulse is featured with live and source links', async ({ page }) => {
   await page.goto('/');
 
-  for (const name of OWN_PRODUCTS) {
-    const feature = page.locator('.feature', { has: page.getByRole('heading', { name, exact: true }) });
-    await expect(feature).toHaveCount(1);
-    await expect(feature.locator(`a[href="https://github.com/digomes87/${name}"]`)).toHaveCount(1);
-    await expect(feature.locator(`a.feature-button-primary[href="https://digomes87.github.io/${name}/"]`)).toHaveCount(1);
+  const feature = page.locator('#projects .feature', { has: page.getByRole('heading', { name: 'SkyPulse', exact: true }) });
+  await expect(feature).toHaveCount(1);
+  await expect(feature.locator('a[href="https://github.com/digomes87/SkyPulse"]')).toHaveCount(1);
+  await expect(feature.locator('a.feature-button-primary[href="https://digomes87.github.io/SkyPulse/"]')).toHaveCount(1);
+});
+
+test('play series is a side-projects section kept out of the main nav', async ({ page }) => {
+  await page.goto('/');
+
+  const side = page.locator('section#play');
+  await expect(page.locator('.nav-menu a[href="#play"]')).toHaveCount(0);
+  await expect(page.locator('.site-footer a[href="#play"]')).toHaveCount(1);
+  await expect(side.locator('.side-project')).toHaveCount(PLAY_SERIES.length);
+  for (const name of PLAY_SERIES) {
+    const project = side.locator('.side-project', { has: page.getByRole('heading', { name, exact: true }) });
+    await expect(project.locator(`a[href="https://digomes87.github.io/${name}/"]`)).toHaveCount(1);
+    await expect(project.locator(`a[href="https://github.com/digomes87/${name}"]`)).toHaveCount(1);
   }
 });
 
-test('play series games live in their own section reachable from the nav', async ({ page }) => {
+test('profile does not name a target country and states remote availability', async ({ page }) => {
   await page.goto('/');
 
-  const playSection = page.locator('section#play');
-  await expect(page.locator('.nav-menu a[href="#play"]')).toHaveCount(1);
-  for (const name of PLAY_SERIES) {
-    await expect(playSection.getByRole('heading', { name, exact: true })).toHaveCount(1);
-  }
-  await expect(playSection.locator('.feature')).toHaveCount(PLAY_SERIES.length);
+  const text = await page.locator('body').innerText();
+
+  expect(text).not.toMatch(/Netherlands|Portugal|Amsterdam|Eindhoven|Piedmont/);
+  expect(text).toContain('100% remote');
 });
 
 test('skills are grouped by area with the core areas featured', async ({ page }) => {

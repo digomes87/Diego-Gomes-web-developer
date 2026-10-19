@@ -136,13 +136,13 @@ main > .gateway {
   transform: translateX(4px);
 }
 
-.gateway-tile--play {
+.gateway-tile--case {
   background: var(--color-wash);
   color: var(--color-ink);
   border-bottom: var(--border);
 }
 
-.gateway-tile--play:hover .arrow-box {
+.gateway-tile--case:hover .arrow-box {
   background: var(--color-secondary);
   border-color: var(--color-secondary);
   color: var(--color-paper);
@@ -159,7 +159,6 @@ main > .gateway {
 
 .gateway-collage img {
   position: absolute;
-  width: 64%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: left top;
@@ -168,35 +167,15 @@ main > .gateway {
   transition: transform 700ms var(--ease-out-expo);
 }
 
-.gateway-collage img:nth-child(1) {
+.gateway-collage img {
   top: 0;
-  left: 0;
-  transform: rotate(-5deg);
-}
-
-.gateway-collage img:nth-child(2) {
-  top: 8%;
   right: 0;
-  transform: rotate(4deg);
+  width: 100%;
+  transform: rotate(-3deg);
 }
 
-.gateway-collage img:nth-child(3) {
-  top: 42%;
-  left: 20%;
-  transform: rotate(-1deg);
-  image-rendering: pixelated;
-}
-
-.gateway-tile--play:hover .gateway-collage img:nth-child(1) {
-  transform: rotate(-8deg) translate(-10px, -6px);
-}
-
-.gateway-tile--play:hover .gateway-collage img:nth-child(2) {
-  transform: rotate(7deg) translate(10px, -8px);
-}
-
-.gateway-tile--play:hover .gateway-collage img:nth-child(3) {
-  transform: rotate(0deg) translateY(6px);
+.gateway-tile--case:hover .gateway-collage img {
+  transform: rotate(0deg) translateY(-4px);
 }
 
 .gateway-tile--about {
@@ -245,7 +224,7 @@ main > .gateway {
     grid-template-columns: 1fr;
   }
 
-  .gateway-tile--play {
+  .gateway-tile--case {
     min-height: 420px;
   }
 
@@ -457,6 +436,72 @@ main > .offer {
   color: #333;
 }
 
+.job-results {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.job-results li {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.job-results li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 12px;
+  height: 2px;
+  background: var(--color-secondary);
+}
+
+/* Education */
+
+.credentials {
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+
+.credentials-title {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2.25rem);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.credential-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  border-top: var(--border);
+  border-left: var(--border);
+}
+
+.credential {
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+  border-right: var(--border);
+  border-bottom: var(--border);
+}
+
+.credential-year {
+  font-weight: var(--weight-black);
+  color: var(--color-secondary);
+}
+
+.credential-name {
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.credential-school {
+  color: var(--color-grey);
+  font-size: 0.95rem;
+}
+
 /* Call to action */
 
 main > .call-to-action {
@@ -543,6 +588,11 @@ main > .call-to-action {
 
 .post-media--ink {
   background: var(--color-ink);
+}
+
+.post-media--wash {
+  background: var(--color-wash);
+  color: var(--color-ink);
 }
 
 .post-link:hover img {

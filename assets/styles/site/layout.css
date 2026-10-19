@@ -281,6 +281,10 @@ main > section {
   }
 }
 
+.section-title--small {
+  font-size: clamp(2rem, 1.3rem + 2.6vw, 3.5rem);
+}
+
 .section-intro {
   font-size: var(--text-large);
   color: var(--color-grey);

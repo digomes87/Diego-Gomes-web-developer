@@ -60,6 +60,8 @@ function buildSearchIndex() {
     ...collectSkillEntries(),
     ...collectTaggedEntries('.feature', 'h3'),
     ...collectTaggedEntries('.job', '.job-title'),
+    ...collectTaggedEntries('.post', '.post-title'),
+    ...collectTaggedEntries('.side-project', 'h3'),
   ];
 }
 

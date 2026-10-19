@@ -34,10 +34,6 @@
   border-right: var(--border);
 }
 
-.feature--card .feature-media {
-  border-bottom: var(--border);
-}
-
 .feature-body {
   display: flex;
   flex-direction: column;
@@ -105,66 +101,80 @@
   }
 }
 
-/* Play series */
+/* Side projects (Play Series) */
 
-main > .play {
-  background: var(--color-ink);
-  color: var(--color-paper);
+main > .side {
+  border-top: var(--border);
 }
 
-.play .section-intro {
-  color: var(--color-grey-light);
-}
-
-.play-traits {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.play-traits li {
-  padding: 0.35rem 0.75rem;
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-  font-size: 0.8rem;
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-}
-
-.play-grid {
+.side-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(1rem, 2vw, 2rem);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-.play .feature {
-  border-color: var(--color-paper);
+.side-project {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
 }
 
-.feature--span {
-  grid-column: 1 / -1;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+.side-project img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: left top;
+  border: var(--border);
+  margin-bottom: 0.5rem;
+  filter: grayscale(1);
+  transition: filter var(--duration-normal);
 }
 
-@media (max-width: 1000px) {
-  .feature--span {
-    grid-template-columns: 1fr;
-  }
+.side-project:hover img {
+  filter: none;
 }
 
-.feature-media--pixel img {
+.side-project img.pixelated {
   object-position: left bottom;
   image-rendering: pixelated;
 }
 
-.play .feature h3 {
-  font-size: clamp(1.75rem, 1.1rem + 1.8vw, 2.75rem);
+.side-project h3 {
+  font-size: 1.1rem;
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
 }
 
-@media (max-width: 860px) {
-  .play-grid {
-    grid-template-columns: 1fr;
+.side-project p {
+  font-size: 0.95rem;
+  color: var(--color-grey);
+}
+
+.side-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.side-links a {
+  color: var(--color-ink);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  text-underline-offset: 4px;
+}
+
+.side-links a:hover {
+  color: var(--color-secondary);
+}
+
+@media (max-width: 1000px) {
+  .side-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
+@media (max-width: 640px) {
+  .side-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
