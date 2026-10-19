@@ -52,6 +52,12 @@ test('play series is a side-projects section kept out of the main nav', async ({
   }
 });
 
+test('play series follows the more data and systems work section', async ({ page }) => {
+  await page.goto('/');
+
+  await expect(page.locator('section#more-projects + section#play')).toHaveCount(1);
+});
+
 test('profile does not name a target country and states remote availability', async ({ page }) => {
   await page.goto('/');
 
