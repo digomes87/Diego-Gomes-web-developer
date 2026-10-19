@@ -165,12 +165,16 @@
         <section class="gateway" aria-label="Start here">
             <div class="container gateway-grid">
                 <a class="gateway-tile gateway-tile--play" href="#play">
-                    <img src="assets/images/projects/playgrua.webp" width="960" height="600" alt="" loading="lazy">
+                    <span class="gateway-collage" aria-hidden="true">
+                        <img src="assets/images/projects/playgrua.webp" width="960" height="600" alt="" loading="lazy">
+                        <img src="assets/images/projects/playkids.webp" width="960" height="600" alt="" loading="lazy">
+                        <img src="assets/images/projects/playmate.webp" width="768" height="431" alt="" loading="lazy">
+                    </span>
                     <span class="gateway-tile-body">
                         <span class="gateway-tile-title">The Play Series</span>
-                        <span class="gateway-tile-text">Educational browser games engineered like production software.</span>
+                        <span class="gateway-tile-text">Five browser games and scenes, engineered like production software.</span>
                     </span>
-                    <span class="arrow-box arrow-box--light" aria-hidden="true"><svg class="icon"><use href="#icon-arrow"/></svg></span>
+                    <span class="arrow-box" aria-hidden="true"><svg class="icon"><use href="#icon-arrow"/></svg></span>
                 </a>
                 <a class="gateway-tile gateway-tile--about" href="#about">
                     <span class="gateway-tile-mark" aria-hidden="true">DG</span>
@@ -316,11 +320,11 @@
                         <h2 id="play-heading" class="section-title">Play Series</h2>
                     </div>
                     <div>
-                        <p class="section-intro">A growing series of browser games, each one teaching a real subject: system design, crane operation, maths, piano. Under the playful surface they share the same engineering standards.</p>
+                        <p class="section-intro">A growing series of browser games, each one about a real subject: system design, crane operation, maths, piano, gaúcho mate culture. Under the playful surface they share the same engineering standards.</p>
                         <ul class="play-traits">
-                            <li>Strict TypeScript</li>
-                            <li>Deterministic engines</li>
-                            <li>Unit + E2E tests</li>
+                            <li>Engines decoupled from the UI</li>
+                            <li>Deterministic simulations</li>
+                            <li>Automated tests</li>
                             <li>CI/CD to GitHub Pages</li>
                             <li>Touch, keyboard, gamepad</li>
                             <li>No tracking</li>
@@ -418,6 +422,36 @@
                                     <span class="arrow-box" aria-hidden="true"><svg class="icon"><use href="#icon-arrow"/></svg></span>
                                 </a>
                                 <a class="arrow-link arrow-link--quiet feature-button" href="https://github.com/digomes87/PlayPiano" target="_blank" rel="noopener">
+                                    <span>Source</span>
+                                    <span class="arrow-box" aria-hidden="true"><svg class="icon"><use href="#icon-github"/></svg></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature feature--wide feature--span">
+                        <a class="feature-media feature-media--pixel" href="https://digomes87.github.io/PlayMate/" target="_blank" rel="noopener">
+                            <img src="assets/images/projects/playmate.webp" width="768" height="431" loading="lazy" alt="PlayMate pixel-art scene at dusk: a gaúcho drinking chimarrão by the fire while cattle, horses and sheep graze in the pampa">
+                        </a>
+                        <div class="feature-body">
+                            <span class="feature-index">05 &middot; Pixel-art scene</span>
+                            <h3>PlayMate</h3>
+                            <p class="feature-pitch">Mate no Pampa: a living pixel-art scene from Rio Grande do Sul. A gaúcho serves chimarrão by the fire while the herd grazes, the day turns into night and an original 8-bit milonga plays in the background.</p>
+                            <ul class="feature-highlights">
+                                <li>256 &times; 144 canvas with sprites written as text grids and Bayer-dithered skies</li>
+                                <li>Two-minute day cycle with light keyframes; the fire stays lit at night</li>
+                                <li>Milonga in A minor synthesised live with Web Audio, no audio files</li>
+                                <li>No build step, plain ES modules, node:test in CI to GitHub Pages</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>JavaScript</li><li>Canvas 2D</li><li>Web Audio API</li><li>node:test</li><li>GitHub Actions</li>
+                            </ul>
+                            <div class="feature-actions">
+                                <a class="arrow-link feature-button feature-button-primary" href="https://digomes87.github.io/PlayMate/" target="_blank" rel="noopener">
+                                    <span>Open scene</span>
+                                    <span class="arrow-box" aria-hidden="true"><svg class="icon"><use href="#icon-arrow"/></svg></span>
+                                </a>
+                                <a class="arrow-link arrow-link--quiet feature-button" href="https://github.com/digomes87/PlayMate" target="_blank" rel="noopener">
                                     <span>Source</span>
                                     <span class="arrow-box" aria-hidden="true"><svg class="icon"><use href="#icon-github"/></svg></span>
                                 </a>

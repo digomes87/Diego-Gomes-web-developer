@@ -125,55 +125,88 @@ main > .gateway {
   align-items: flex-end;
   justify-content: space-between;
   gap: 1.5rem;
-  min-height: clamp(280px, 32vw, 460px);
+  min-height: clamp(320px, 32vw, 460px);
   padding: clamp(1.5rem, 3vw, 3rem);
-  color: var(--color-paper);
   text-decoration: none;
   overflow: hidden;
   isolation: isolate;
 }
 
-.gateway-tile img {
+.gateway-tile:hover .arrow-box .icon {
+  transform: translateX(4px);
+}
+
+.gateway-tile--play {
+  background: var(--color-wash);
+  color: var(--color-ink);
+  border-bottom: var(--border);
+}
+
+.gateway-tile--play:hover .arrow-box {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-paper);
+}
+
+.gateway-collage {
   position: absolute;
-  inset: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
+  top: clamp(1.5rem, 3vw, 3rem);
+  right: clamp(1.5rem, 3vw, 3rem);
+  z-index: -1;
+  width: min(56%, 380px);
+  aspect-ratio: 16 / 9;
+}
+
+.gateway-collage img {
+  position: absolute;
+  width: 64%;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: left top;
-  filter: grayscale(0.6);
-  transition: transform 900ms var(--ease-out-expo), filter 900ms var(--ease-out-expo);
+  border: var(--border);
+  box-shadow: 6px 6px 0 var(--color-ink);
+  transition: transform 700ms var(--ease-out-expo);
 }
 
-.gateway-tile::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(180deg, rgb(0 0 0 / 0.35), rgb(0 0 0 / 0.92) 75%);
-}
-
-.gateway-tile--play::after,
-.gateway-tile--about::after {
-  content: "";
-  position: absolute;
+.gateway-collage img:nth-child(1) {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 8px;
+  transform: rotate(-5deg);
 }
 
-.gateway-tile--play::after {
-  background: var(--color-secondary);
+.gateway-collage img:nth-child(2) {
+  top: 8%;
+  right: 0;
+  transform: rotate(4deg);
+}
+
+.gateway-collage img:nth-child(3) {
+  top: 42%;
+  left: 20%;
+  transform: rotate(-1deg);
+  image-rendering: pixelated;
+}
+
+.gateway-tile--play:hover .gateway-collage img:nth-child(1) {
+  transform: rotate(-8deg) translate(-10px, -6px);
+}
+
+.gateway-tile--play:hover .gateway-collage img:nth-child(2) {
+  transform: rotate(7deg) translate(10px, -8px);
+}
+
+.gateway-tile--play:hover .gateway-collage img:nth-child(3) {
+  transform: rotate(0deg) translateY(6px);
 }
 
 .gateway-tile--about {
   background: var(--color-primary);
+  color: var(--color-paper);
 }
 
-.gateway-tile--about::before,
-.gateway-tile--about::after {
-  display: none;
+.gateway-tile--about:hover .arrow-box {
+  background: var(--color-paper);
+  color: var(--color-ink);
 }
 
 .gateway-tile-mark {
@@ -193,20 +226,6 @@ main > .gateway {
   transform: translateX(-12px);
 }
 
-.gateway-tile:hover img {
-  transform: scale(1.05);
-  filter: none;
-}
-
-.gateway-tile:hover .arrow-box {
-  background: var(--color-paper);
-  color: var(--color-ink);
-}
-
-.gateway-tile:hover .arrow-box .icon {
-  transform: translateX(4px);
-}
-
 .gateway-tile-body {
   display: grid;
   gap: 0.5rem;
@@ -224,6 +243,14 @@ main > .gateway {
 @media (max-width: 760px) {
   .gateway-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gateway-tile--play {
+    min-height: 420px;
+  }
+
+  .gateway-collage {
+    width: min(80%, 360px);
   }
 }
 

@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 
-const PLAY_SERIES = ['PlaySysDesigner', 'PlayGrua', 'PlayKids', 'PlayPiano'];
+const PLAY_SERIES = ['PlaySysDesigner', 'PlayGrua', 'PlayKids', 'PlayPiano', 'PlayMate'];
 const OWN_PRODUCTS = ['SkyPulse', ...PLAY_SERIES];
 const SKILL_AREAS = 8;
 
