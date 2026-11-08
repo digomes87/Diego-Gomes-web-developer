@@ -131,3 +131,22 @@ test('mobile menu toggles from the header button', async ({ page, isMobile }) =>
 
   await expect(toggle).toHaveAttribute('aria-expanded', 'false');
 });
+
+test('language switcher translates the page and drops PT', async ({ page }) => {
+  await page.goto('/');
+
+  const buttons = page.locator('.utility-links [data-lang]');
+  await expect(buttons).toHaveCount(3);
+  await expect(page.locator('.utility-links [data-lang="pt"]')).toHaveCount(0);
+
+  await page.locator('.utility-links [data-lang="es"]').click();
+  await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Habilidades');
+  await expect(page.locator('.utility-links [data-lang="es"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('h2#skills-heading, #skills .section-title').first()).toHaveText('Habilidades técnicas.');
+
+  await page.locator('.utility-links [data-lang="it"]').click();
+  await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Competenze');
+
+  await page.locator('.utility-links [data-lang="en"]').click();
+  await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Skills');
+});
