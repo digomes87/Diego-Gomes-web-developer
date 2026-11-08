@@ -1,101 +1,41 @@
-# Diego Gomes - Data Engineer & Software Developer Portfolio
+# Diego Gomes — Senior Data Engineer Portfolio
 
-![Portfolio Preview](assets/images/portifolio.png)
+![Portfolio preview](assets/images/portfolio-preview.webp)
 
-> Modern and responsive portfolio showcasing my expertise in Data Engineering, Software Development, and Cloud Technologies.
+My personal portfolio. I've been writing software for close to 20 years — PHP first, then Java, then Python — and today I build real-time fraud detection pipelines with Kafka and Spark for Itaú Bank at TCS, running on AWS EKS and kept lean with FinOps and Terraform. Day to day I work in Python, Go, SQL, Kafka, Spark, Airflow and AWS, and I'm steering towards Rust for data and backend infrastructure. I also ran my own consultancy, PyCoorp, from 2014 to 2023: cloud and software consulting, server administration and support, and programming courses.
 
-This portfolio features a modern dark theme with interactive effects, optimized SEO, and responsive design. Built with cutting-edge web technologies and best practices.
+**Live**: [digomes87.github.io/Diego-Gomes-web-developer](https://digomes87.github.io/Diego-Gomes-web-developer/)
 
-## 🚀 Features
+## The site
 
-- **Modern Design**: Dark theme with futuristic visual effects
-- **Interactive Elements**: Particle animations and smooth transitions
-- **SEO Optimized**: Complete meta tags, Open Graph, and structured data
-- **PWA Ready**: Progressive Web App capabilities
-- **Responsive**: Mobile-first design approach
-- **Performance**: Optimized loading and rendering
+A single-page, content-driven portfolio: hero with stack search, about, work history, featured work, projects, the Play Series side projects, technical skills and contact. It has an EN / ES / IT language switcher in the top bar (persisted in `localStorage`), SEO structured data, sitemap and robots.txt, and Playwright browser tests for desktop and mobile that run in CI on every pull request.
 
-## 🛠️ Technologies Used
+## What you'll find there
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Libraries**: Particles.js, Font Awesome, Google Fonts
-- **SEO**: Schema.org structured data, sitemap.xml, robots.txt
-- **PWA**: Web App Manifest, service worker ready
+- **Current role** — real-time fraud detection at TCS for Itaú Bank (since Dec 2022): Kafka and Spark pipelines that score transactions as they happen, fraud services on EKS, FinOps that cut cloud costs, and more than R$5M in fraud avoided per year.
+- **Work history** — from first IT hire at a startup that grew to ~80 people, through Django full-stack years and cloud/SaaS architecture, to PyCoorp, nine years of my own consultancy.
+- **Featured project: SkyPulse** — real-time flight disruption and EU261 exposure platform for European air traffic: live ingestion, Delta Lake lakehouse, a fully tested EU261 rules engine, delay prediction served over FastAPI, all built on my own time and open source.
+- **Projects** — kflowctl (Go CLI/daemon/Kubernetes controller for Kafka consumer lag), QuantML (event-driven ETF NAV monitoring), NYC Taxi analytics with Spark, bees × climate analysis, a Rust full-text search engine (BM25, block-max WAND) and a small Rust isometric engine.
+- **The Play Series** — weekend browser games held to the same habits as work (tests, CI, engine apart from UI): PlaySysDesigner, PlayGrua, PlayKids, PlayPiano, PlayDrive and PlayMate.
+- **Skills** — streaming and batch data (Kafka, Spark, Airflow, Iceberg, dbt), AWS in production, Go/Python/Rust/Java, DevSecOps, security and compliance, IaC.
 
-## 📦 Installation
-
-```bash
-git clone https://github.com/digomes87/Diego-Gomes-web-developer.git
-cd Diego-Gomes-web-developer
-
-# Start local server
-python3 -m http.server 8000
-# or
-npx serve .
-```
-
-## 🔀 Development Workflow
+## Development workflow
 
 - `develop` is the integration branch; `main` is what runs in production.
 - Work happens on a feature branch and reaches `develop` through a pull request.
 - When CI passes on a push to `develop`, the **Promote** workflow opens a `develop` to `main` pull request, merges it and deploys. No manual release step.
 - Both branches are protected: changes land only through pull requests with a green CI.
 
-**CI** (`.github/workflows/ci.yml`) runs on every pull request to `main` or `develop` and on every push to `develop`:
-HTML validation, local link check and browser tests (desktop and mobile Chromium).
+**CI** (`.github/workflows/ci.yml`): HTML validation, local link check and browser tests (desktop and mobile Chromium) on every PR to `main`/`develop` and push to `develop`.
+**Deploy** (`.github/workflows/deploy.yml`): on every push to `main`, runs CI and publishes to GitHub Pages.
+**Promote** (`.github/workflows/promote.yml`): after CI succeeds on `develop`; skips if `develop` moved on or `main` is up to date.
 
-**Deploy** (`.github/workflows/deploy.yml`) runs on every push to `main`: it runs CI again and only then publishes to GitHub Pages.
-
-**Promote** (`.github/workflows/promote.yml`) runs after CI succeeds on `develop`. It skips if `develop` moved on since the tested commit or if `main` is already up to date.
-
-```bash
-npm install
-npx playwright install chromium
-npm run lint:html   # HTML validation
-npm run test:e2e    # browser tests against a local server
-```
-
-## 🎯 About The Project
-
-This portfolio showcases my professional journey as a Data Engineer and Software Developer with 18+ years of experience. It highlights my expertise in:
-
-- **Data Engineering**: PySpark, Apache Spark, Databricks, ETL pipelines
-- **Programming Languages**: Python, Java, Node.js, JavaScript, TypeScript
-- **Cloud Platforms**: AWS, GCP, Docker, Kubernetes
-- **Frameworks**: Django, Flask, FastAPI, React, Spring Boot
-- **Databases**: PostgreSQL, MongoDB, Redis, Elasticsearch
-
-
-## 🌐 Live Demo
-
-- **Portfolio**: [https://digomes87.github.io/Diego-Gomes-web-developer/](https://digomes87.github.io/Diego-Gomes-web-developer/)
-- **Source Code**: [https://github.com/digomes87/Diego-Gomes-web-developer](https://github.com/digomes87/Diego-Gomes-web-developer)
-
-## 📊 Portfolio Highlights
-
-- **Real-time Fraud Detection System**: Machine learning pipeline for financial fraud detection
-- **NYC Taxi Data Analysis**: Large-scale data processing with PySpark and visualization
-- **Cloud Data Pipeline**: Scalable ETL architecture on AWS
-- **Bee Behavior Analysis**: Computer vision and data analysis for agricultural research
-- **E-commerce Platform**: Full-stack development with modern frameworks
-
-## 📱 Contact & Social
+## Contact
 
 - **Email**: [diego.gomes87@gmail.com](mailto:diego.gomes87@gmail.com)
 - **LinkedIn**: [linkedin.com/in/diego-go](https://linkedin.com/in/diego-go)
 - **GitHub**: [github.com/digomes87](https://github.com/digomes87)
-- **Location**: São Paulo, Brazil
 
-## 🚀 Other Projects
+## License
 
-- **Eventex**: [Django Event Management System](https://github.com/digomes87/wttd-eventex)
-- **Data Engineering Projects**: Various ETL and analytics solutions
-- **Machine Learning Models**: Fraud detection and predictive analytics
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-⭐ **If you found this portfolio helpful, please give it a star!** ⭐
+Open source under the [MIT License](LICENSE).
