@@ -136,13 +136,23 @@ test('language switcher translates the page and drops PT', async ({ page }) => {
   await page.goto('/');
 
   const buttons = page.locator('.utility-links [data-lang]');
-  await expect(buttons).toHaveCount(3);
+  await expect(buttons).toHaveCount(4);
   await expect(page.locator('.utility-links [data-lang="pt"]')).toHaveCount(0);
 
   await page.locator('.utility-links [data-lang="es"]').click();
   await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Habilidades');
   await expect(page.locator('.utility-links [data-lang="es"]')).toHaveAttribute('aria-pressed', 'true');
   await expect(page.locator('h2#skills-heading, #skills .section-title').first()).toHaveText('Habilidades técnicas.');
+
+  await page.locator('.utility-links [data-lang="it"]').click();
+  await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Competenze');
+
+  // Regression: switching back to EN used to clone the buttons and kill the listeners.
+  await page.locator('.utility-links [data-lang="en"]').click();
+  await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Skills');
+
+  await page.locator('.utility-links [data-lang="de"]').click();
+  await expect(page.locator('#skills .section-title').first()).toHaveText('Technische Skills.');
 
   await page.locator('.utility-links [data-lang="it"]').click();
   await expect(page.locator('.nav-menu a[href="#skills"]')).toHaveText('Competenze');
