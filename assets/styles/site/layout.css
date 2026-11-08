@@ -68,6 +68,22 @@
   cursor: help;
 }
 
+.utility-links button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: var(--weight-bold);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.utility-links button.is-active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .main-nav {
   border-bottom: var(--border);
 }
@@ -169,7 +185,7 @@
 
 @media (max-width: 900px) {
   .utility-links {
-    display: none;
+    gap: 0.75rem;
   }
 
   .nav-toggle {
