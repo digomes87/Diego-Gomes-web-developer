@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 
-const PLAY_SERIES = ['PlaySysDesigner', 'PlayGrua', 'PlayKids', 'PlayPiano', 'PlayMate'];
+const PLAY_SERIES = ['PlaySysDesigner', 'PlayGrua', 'PlayKids', 'PlayPiano', 'PlayDrive', 'PlayMate'];
 const SKILL_AREAS = 8;
 
 function collectLocalFailures(page: Page): string[] {
