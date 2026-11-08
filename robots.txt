@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://diego-gomes.dev/sitemap.xml
+Sitemap: https://digomes87.github.io/Diego-Gomes-web-developer/sitemap.xml
 
 # Disallow crawling of assets that don't need indexing
 Disallow: /assets/js/
