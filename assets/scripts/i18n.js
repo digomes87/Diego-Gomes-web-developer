@@ -246,17 +246,138 @@
       'AWS certifications': 'Certificazioni AWS',
       'Data security track in progress: Vault, KMS, CDPSE': 'Percorso di sicurezza dei dati in corso: Vault, KMS, CDPSE',
       'UFPR · thesis: CNN vs Vision Transformer for melanoma detection (ISIC 2020)': 'UFPR · tesi: CNN vs Vision Transformer per il rilevamento del melanoma (ISIC 2020)'
+    },
+    de: {
+      'Skip to content': 'Zum Inhalt springen',
+      'Available for 100% remote roles': 'Verfügbar für 100 % Remote-Rollen',
+      'Search my stack, projects and experience': 'Durchsuche meinen Stack, Projekte und Erfahrung',
+      'Search!': 'Suchen!',
+      'About': 'Über mich',
+      'Skills': 'Skills',
+      'Experience': 'Erfahrung',
+      'Projects': 'Projekte',
+      'Contact': 'Kontakt',
+      'Back to top ↑': 'Nach oben ↑',
+      'Profile': 'Profil',
+      'Toolbox': 'Werkzeugkasten',
+      'Work': 'Werdegang',
+      'What I bring': 'Was ich mitbringe',
+      'More data & systems work.': 'Weitere Daten- und Systemarbeit.',
+      'Off the clock': 'Neben der Arbeit',
+      'Side projects': 'Nebenprojekte',
+      'Featured project': 'Projekt im Fokus',
+      'Education & certifications': 'Ausbildung & Zertifizierungen',
+      "Early career · PHP and Java years": 'Frühe Karriere · PHP- und Java-Jahre',
+      "Where I've worked.": 'Wo ich gearbeitet habe.',
+      'Technical skills.': 'Technische Skills.',
+      'Six things your data platform gets.': 'Sechs Dinge, die Ihre Datenplattform bekommt.',
+      'A data platform, end to end.': 'Eine Datenplattform, von Ende zu Ende.',
+      'About me': 'Über mich',
+      'About Diego': 'Über Diego',
+      'The Play Series, a weekend hobby.': 'The Play Series, ein Wochenend-Hobby.',
+      'Get in touch': 'Sprechen wir',
+      "Let's connect.": 'Lassen uns vernetzen.',
+      'Happy to talk about data engineering roles, real-time platforms and fraud detection.': 'Gerne spreche ich über Data-Engineering-Rollen, Echtzeitplattformen und Betrugserkennung.',
+      'Start with an email': 'Mit einer E-Mail beginnen',
+      'Talk to Diego': 'Mit Diego sprechen',
+      'Message on LinkedIn': 'Auf LinkedIn schreiben',
+      'All repositories': 'Alle Repositories',
+      'Open source': 'Open Source',
+      'Live site': 'Live-Seite',
+      'Open': 'Öffnen',
+      'Play': 'Spielen',
+      'Source': 'Quellcode',
+      'Follow': 'Folgen',
+      'Email': 'E-Mail',
+      'Hiring a Senior Data Engineer?': 'Suchen Sie einen Senior Data Engineer?',
+      "Hiring for data engineering? Drop me a line and I'll get back to you.": 'Sie stellen Data Engineers ein? Schreiben Sie mir, ich antworte.',
+      "Hi, I'm Diego.": 'Hallo, ich bin Diego.',
+      "Hi, I'm Diego Gomes. Close to 20 years shipping software; these days I build streaming fraud detection for Itaú Bank with Kafka, Spark and AWS.": 'Hallo, ich bin Diego Gomes. Fast 20 Jahre Softwareentwicklung; heute baue ich Streaming-Betrugserkennung für Itaú mit Kafka, Spark und AWS.',
+      'shipping software': 'Software bauen',
+      'seconds.': 'Sekunden.',
+      'Fraud avoided per year': 'Verhinderter Betrug pro Jahr',
+      'Featured case: SkyPulse': 'Fall im Fokus: SkyPulse',
+      "Results over code for its own sake.": 'Ergebnisse statt Code um des Codes willen.',
+      'From PHP and Java to Python, Go and data, and now real-time fraud at one of Latin America\'s largest banks.': 'Von PHP und Java zu Python, Go und Daten, und jetzt Echtzeit-Betrugserkennung bei einer der größten Banken Lateinamerikas.',
+      "Grouped by area, with data and cloud platforms at the core and everything needed to run them safely around it.": 'Nach Bereich gruppiert, mit Daten- und Cloud-Plattformen im Kern und allem drumherum, was für einen sicheren Betrieb nötig ist.',
+      'Streaming and batch pipelines, from ingestion to governed data.': 'Streaming- und Batch-Pipelines, von der Aufnahme bis zu geregelten Daten.',
+      'AWS in production, with GCP and Azure experience.': 'AWS in Produktion, mit GCP- und Azure-Erfahrung.',
+      'Programming Languages': 'Programmiersprachen',
+      'Databases & Back-End': 'Datenbanken & Back-End',
+      'Security & Compliance': 'Sicherheit & Compliance',
+      'IaC & Containers': 'IaC & Container',
+      'Cloud Platforms': 'Cloud-Plattformen',
+      'Observability & FinOps': 'Observability & FinOps',
+      'Infrastructure as Code': 'Infrastructure as Code',
+      'Real-time streaming': 'Echtzeit-Streaming',
+      'Fraud detection': 'Betrugserkennung',
+      'Reliable platforms': 'Zuverlässige Plattformen',
+      'Data Platform': 'Datenplattform',
+      'Cloud Consulting': 'Cloud-Beratung',
+      'Teaching': 'Lehrtätigkeit',
+      'Senior Data Engineer · Real-time & fraud detection': 'Senior Data Engineer · Echtzeit-Betrugserkennung',
+      'Cloud Engineer / Solutions Architect': 'Cloud Engineer / Solutions Architect',
+      'API Developer / Cloud & Data Support': 'API-Entwickler / Cloud- & Data-Support',
+      'FullStack Developer': 'Fullstack-Entwickler',
+      'Python Developer (Django)': 'Python-Entwickler (Django)',
+      'Founder / Consultant': 'Gründer / Berater',
+      'Software Developer, first IT hire': 'Softwareentwickler, erster IT-Mitarbeiter',
+      "I'm a Senior Data Engineer at TCS, working for Itaú Bank since December 2022. I build real-time fraud detection pipelines with Kafka and Spark, run the fraud services on EKS and keep the platform lean with FinOps and reusable Terraform.": 'Ich bin Senior Data Engineer bei TCS und arbeite seit Dezember 2022 für Itaú. Ich baue Echtzeit-Pipelines zur Betrugserkennung mit Kafka und Spark, betreibe die Betrugsdienste auf EKS und halte die Plattform mit FinOps und wiederverwendbarem Terraform schlank.',
+      "I've been writing software for close to 20 years: PHP first, then Java, then Python. I was the first IT hire at a startup that grew to around 80 people, and I ran my own consultancy, PyCoorp, from 2014 to 2023. Over the last few years my focus has narrowed to data engineering and real-time systems, mostly fraud detection in fintech.": 'Ich schreibe seit fast 20 Jahren Software: zuerst PHP, dann Java, dann Python. Ich war der erste IT-Mitarbeiter eines Startups, das auf etwa 80 Leute wuchs, und führte von 2014 bis 2023 meine eigene Beratung, PyCoorp. In den letzten Jahren hat sich mein Fokus auf Data Engineering und Echtzeitsysteme verengt, vor allem Betrugserkennung in der Fintech-Branche.',
+      'Day to day I work in Python, Go, SQL, Kafka, Spark, Airflow and AWS — I build Go tooling such as kflowctl, CLIs, Kafka consumers and Kubernetes controllers born from real production pipelines — and I\'m steering towards Rust for data and backend infrastructure.': 'Im Alltag arbeite ich mit Python, Go, SQL, Kafka, Spark, Airflow und AWS — ich baue Go-Tooling wie <a href="https://github.com/digomes87/kflowctl" target="_blank" rel="noopener">kflowctl</a>, CLIs, Kafka-Consumer und Kubernetes-Controller, entstanden aus echten Produktions-Pipelines — und ich bewege mich Richtung Rust für Daten- und Backend-Infrastruktur.',
+      'Availability of the fraud platform on EKS': 'Verfügbarkeit der Betrugsplattform auf EKS',
+      'Cloud cost reduction through FinOps': 'Cloud-Kostenreduktion durch FinOps',
+      'Data lakes for forensics': 'Data Lakes für Forensik',
+      'More accurate detection with behavioural scoring': 'Präzisere Erkennung durch Verhaltens-Scoring',
+      'Delay prediction model tracked in MLflow and served over FastAPI': 'Verspätungsmodell in MLflow getrackt und über FastAPI bereitgestellt',
+      'Fully tested EU261 rules engine with METAR weather exemptions': 'Vollständig getestete EU261-Regelengine mit METAR-Wetterausnahmen',
+      'Streaming pipeline into a Delta Lake bronze/silver/gold lakehouse': 'Streaming-Pipeline in ein Delta-Lake-Bronze/Silver/Gold-Lakehouse',
+      'Runs locally on docker-compose + LocalStack, deploys to AWS with Terraform': 'Läuft lokal auf docker-compose + LocalStack, Deployment auf AWS mit Terraform',
+      'Spring Boot microservices and Python REST APIs on containerised AWS environments.': 'Spring-Boot-Mikroservices und Python-REST-APIs in containerisierten AWS-Umgebungen.',
+      'ETL pipelines on Redshift with Apache Spark and serverless data workflows on AWS Lambda.': 'ETL-Pipelines auf Redshift mit Apache Spark und serverlose Daten-Workflows auf AWS Lambda.',
+      'Multi-AZ SaaS architectures on AWS, provisioned with Terraform and CloudFormation.': 'Multi-AZ-SaaS-Architekturen auf AWS, bereitgestellt mit Terraform und CloudFormation.',
+      'Data platform workloads on Airflow, NiFi, Dremio and Hive; DevSecOps pipelines on GitLab CI and Jenkins with SAST gates.': 'Datenplattform-Workloads auf Airflow, NiFi, Dremio und Hive; DevSecOps-Pipelines auf GitLab CI und Jenkins mit SAST-Gates.',
+      'Backend development with Django and PostgreSQL for an aviation market product, deployed and run on GCP App Engine.': 'Backend-Entwicklung mit Django und PostgreSQL für ein Luftfahrtmarkt-Produkt, deployt und betrieben auf GCP App Engine.',
+      'PySpark jobs for data transformation and aggregation behind analytics workloads. REST APIs in Python and Django for the content and student management platforms, deployed on GCP App Engine. Database performance analysis and orchestration of batch processes within Scrum teams.': 'PySpark-Jobs für Transformation und Aggregation hinter Analytics-Workloads. REST-APIs in Python und Django für die Content- und Studentenmanagement-Plattformen, deployt auf GCP App Engine. Datenbankperformance-Analyse und Orchestrierung von Batch-Prozessen in Scrum-Teams.',
+      'Internal web applications and BI solutions in Python and Django: cash management, financial flow and sales tracking. Administered HFSQL databases, maintained a CakePHP + MySQL application and ran the internal infrastructure.': 'Interne Webanwendungen und BI-Lösungen in Python und Django: Cash-Management, Finanzflüsse und Vertriebs-Tracking. Administrierte HFSQL-Datenbanken, pflegte eine CakePHP-+MySQL-Anwendung und betrieb die interne Infrastruktur.',
+      'Nine years running my own consultancy alongside employment: cloud and software consulting, custom systems for clients, server administration and support, and programming courses.': 'Neun Jahre eigene Beratung neben dem Angestelltenverhältnis: Cloud- und Software-Beratung, kundenspezifische Systeme, Server-Administration und Support sowie Programmierkurse.',
+      'Started in PHP and Java. Joined a startup as its first IT employee and built its systems as it grew to around 80 direct employees.': 'Begonnen mit PHP und Java. Als erster IT-Mitarbeiter in ein Startup gekommen und seine Systeme aufgebaut, während es auf etwa 80 Mitarbeiter wuchs.',
+      'Built real-time fraud detection pipelines with Kafka and Spark; incident response dropped from hours to seconds, avoiding more than R$5M in fraud a year.': 'Echtzeit-Betrugserkennung mit Kafka und Spark aufgebaut; die Reaktionszeit sank von Stunden auf Sekunden und verhinderte jährlich über 5 Mio. R$ an Betrug.',
+      'Kafka and Spark pipelines that score transactions as they happen. Incident response went from hours to seconds.': 'Kafka- und Spark-Pipelines, die Transaktionen in Echtzeit bewerten. Die Reaktionszeit sank von Stunden auf Sekunden.',
+      'Real-time flight disruption and EU261 exposure platform for European air traffic. Ingests live aircraft positions, schedules and airport weather, detects delays and cancellations as they happen and prices each one against EU Regulation 261/2004.': 'Echtzeit-Plattform für Flugunterbrechungen und EU261-Exposure im europäischen Luftraum. Nimmt Live-Flugpositionen, Flugpläne und Flughafenwetter auf, erkennt Verspätungen und Annullierungen sofort und bewertet jede gegen die EU-Verordnung 261/2004.',
+      'Streaming flight disruption and EU261 exposure, from ingestion to a priced answer.': 'Streaming von Flugunterbrechungen und EU261-Exposure, von der Aufnahme bis zur bewerteten Antwort.',
+      "Built on my own time to show the whole path: ingestion, lakehouse, rules engine, model serving, tests, CI/CD and cloud deployment. Live and open source.": 'In meiner Freizeit gebaut, um den ganzen Weg zu zeigen: Aufnahme, Lakehouse, Regelengine, Model Serving, Tests, CI/CD und Cloud-Deployment. Live und Open Source.',
+      'Kafka pipeline health controller: CLI, daemon and Kubernetes controller that tracks consumer lag and scales consumer groups. Born from real-time fraud pipelines.': 'Health-Controller für Kafka-Pipelines: CLI, Daemon und Kubernetes-Controller, der Consumer-Lag verfolgt und Consumer-Groups skaliert. Entstanden aus Echtzeit-Betrugs-Pipelines.',
+      'Event-driven ETF NAV monitoring with sub-second updates over Kafka, archiving to an S3 data lake and Snowflake, with a live dashboard.': 'Event-gesteuertes ETF-NAV-Monitoring mit Sub-Sekunden-Updates über Kafka, Archivierung in einen S3-Data-Lake und Snowflake, mit Live-Dashboard.',
+      'Python package and in-browser dashboard on how climate relates to bee populations in South America: trends, correlations and forecasts.': 'Python-Paket und In-Browser-Dashboard, wie das Klima mit Bienenpopulationen in Südamerika zusammenhängt: Trends, Korrelationen und Prognosen.',
+      'Trip patterns, distance-duration-fare relationships and trip-duration prediction on NYC taxi data with Apache Spark.': 'Fahrtmuster, Beziehungen zwischen Distanz, Dauer und Tarif sowie Fahrtdauer-Vorhersage auf NYC-Taxidaten mit Apache Spark.',
+      'Full-text search engine from first principles: positional inverted index, BM25 with block-max WAND, memory-mapped index, checked with loom and Miri.': 'Volltext-Suchmaschine aus ersten Prinzipien: positioneller invertierter Index, BM25 mit Block-Max-WAND, Memory-Mapped-Index, verifiziert mit loom und Miri.',
+      'Small, domain-agnostic isometric engine in Rust: deterministic fixed-timestep loop, grid pathfinding and a pluggable renderer.': 'Kleine, domänenagnostische Isometrie-Engine in Rust: deterministische Fixed-Timestep-Schleife, Grid-Pathfinding und austauschbarer Renderer.',
+      'A system design game in the spirit of tower defense.': 'Ein System-Design-Spiel im Geiste von Tower Defense.',
+      'Tower crane simulator with real pendulum physics in Three.js.': 'Turmkran-Simulator mit echter Pendelphysik in Three.js.',
+      'Musical maths game for children, answered on the beat.': 'Musikalisches Mathe-Spiel für Kinder, im Takt beantwortet.',
+      'Touch piano for the iPad with guided songs.': 'Touch-Klavier für das iPad mit geführten Songs.',
+      'Simulator of semi-truck parking with engine torque, gearbox and trailer that jackknifes.': 'Lkw-Park-Simulator mit Motordrehmoment, Getriebe und Anhänger, der einknickt.',
+      'Pixel-art pampa scene with a live-synthesised milonga.': 'Pampa-Szene in Pixel-Art mit live synthetisierter Milonga.',
+      'Bachelor in Internet Systems': 'Bachelor in Internetsysteme',
+      'MBA in Cloud Architecture': 'MBA in Cloud-Architektur',
+      'Postgraduate in Data Engineering': 'Aufbaustudium in Data Engineering',
+      'Specialisation in Applied Artificial Intelligence': 'Weiterbildung in Angewandter Künstlicher Intelligenz',
+      'AWS certifications': 'AWS-Zertifizierungen',
+      'Data security track in progress: Vault, KMS, CDPSE': 'Laufende Weiterbildung in Datensicherheit: Vault, KMS, CDPSE',
+      'UFPR · thesis: CNN vs Vision Transformer for melanoma detection (ISIC 2020)': 'UFPR · Arbeit: CNN vs Vision Transformer zur Melanomerkennung (ISIC 2020)'
     }
   };
 
   var PATTERNS = [
-    { re: /^(\d+) tools$/, es: function (m) { return m[1] + ' herramientas'; }, it: function (m) { return m[1] + ' strumenti'; } },
-    { re: /^(\d+) languages$/, es: function (m) { return m[1] + ' idiomas'; }, it: function (m) { return m[1] + ' linguaggi'; } }
+    { re: /^(\d+) tools$/, es: function (m) { return m[1] + ' herramientas'; }, it: function (m) { return m[1] + ' strumenti'; }, de: function (m) { return m[1] + ' Tools'; } },
+    { re: /^(\d+) languages$/, es: function (m) { return m[1] + ' idiomas'; }, it: function (m) { return m[1] + ' linguaggi'; }, de: function (m) { return m[1] + ' Sprachen'; } }
   ];
 
   var PLACEHOLDER = {
     es: 'Busca en mi stack: Kafka, Spark, Airflow...',
-    it: 'Cerca nel mio stack: Kafka, Spark, Airflow...'
+    it: 'Cerca nel mio stack: Kafka, Spark, Airflow...',
+    de: 'Durchsuche meinen Stack: Kafka, Spark, Airflow...'
   };
 
   function norm(text) {
@@ -284,19 +405,26 @@
     });
   }
 
+  var translated = new Set();
+
   function applyLang(lang) {
-    originals.forEach(function (original, el) {
-      var key = norm(original.replace(/<[^>]*>/g, ' '));
-      if (lang === 'en') {
-        el.innerHTML = original;
-        return;
-      }
-      var hasChildren = el.querySelector('*') !== null;
-      var translation = lookup(key, lang);
-      if (translation === null) return;
-      if (hasChildren && translation.indexOf('<') === -1) return;
-      el.innerHTML = translation;
+    // Restore only what we touched: rewriting parents would clone nodes and
+    // drop event listeners (e.g. the switcher buttons themselves).
+    translated.forEach(function (el) {
+      el.innerHTML = originals.get(el);
     });
+    translated.clear();
+    if (lang !== 'en') {
+      originals.forEach(function (original, el) {
+        var key = norm(original.replace(/<[^>]*>/g, ' '));
+        var hasChildren = el.querySelector('*') !== null;
+        var translation = lookup(key, lang);
+        if (translation === null) return;
+        if (hasChildren && translation.indexOf('<') === -1) return;
+        el.innerHTML = translation;
+        translated.add(el);
+      });
+    }
     document.documentElement.setAttribute('lang', lang);
     if (searchInput) searchInput.placeholder = lang === 'en' ? searchPlaceholder : PLACEHOLDER[lang];
     document.querySelectorAll('[data-lang]').forEach(function (btn) {
@@ -308,12 +436,13 @@
 
   function init() {
     collect();
-    document.querySelectorAll('[data-lang]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var lang = btn.getAttribute('data-lang');
-        try { localStorage.setItem('lang', lang); } catch (e) { /* private mode */ }
-        applyLang(lang);
-      });
+    // Delegated so the buttons survive their own innerHTML rewrites.
+    document.addEventListener('click', function (event) {
+      var btn = event.target.closest('[data-lang]');
+      if (!btn) return;
+      var lang = btn.getAttribute('data-lang');
+      try { localStorage.setItem('lang', lang); } catch (e) { /* private mode */ }
+      applyLang(lang);
     });
     var saved = null;
     try { saved = localStorage.getItem('lang'); } catch (e) { /* private mode */ }
