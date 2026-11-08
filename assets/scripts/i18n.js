@@ -125,6 +125,18 @@
       'Specialisation in Applied Artificial Intelligence': 'Especialización en Inteligencia Artificial Aplicada',
       'AWS certifications': 'Certificaciones AWS',
       'Data security track in progress: Vault, KMS, CDPSE': 'Formación en seguridad de datos en curso: Vault, KMS, CDPSE',
+      'Available for 100% remote roles. Portuguese (native), English and Spanish (professional), Italian (learning).': 'Disponible para puestos 100 % remotos. Portugués (nativo), inglés y español (profesional), italiano (aprendiendo).',
+      'Behavioural scoring that made detection 35% more accurate and helps avoid more than R$5M in fraud a year.': 'Scoring conductual que hizo la detección un 35 % más precisa y ayuda a evitar más de R$ 5 M de fraude al año.',
+      'A structured data lake that made forensic investigations 50% faster for the fraud team.': 'Un data lake estructurado que aceleró un 50 % las investigaciones forenses del equipo de fraude.',
+      'Structured data lake that made forensic investigations 50% faster.': 'Un data lake estructurado que aceleró un 50 % las investigaciones forenses del equipo de fraude.',
+      'Fraud services on Kubernetes (EKS) with 99.9%+ availability through peak traffic.': 'Servicios de fraude en Kubernetes (EKS) con disponibilidad superior al 99,9 % en tráfico pico.',
+      'Right-sizing, Savings Plans and Spot: about 40% off the cloud bill with reliability intact.': 'Right-sizing, Savings Plans y Spot: cerca del 40 % de descuento en la factura cloud sin perder fiabilidad.',
+      'Behavioural scoring that raised detection accuracy by 35%.': 'Scoring conductual que elevó un 35 % la precisión de la detección.',
+      'Ran the fraud services on EKS at 99.9%+ availability, with Helm, Cluster Autoscaler and KEDA absorbing Black Friday-level spikes.': 'Operé los servicios de fraude en EKS con disponibilidad superior al 99,9 %, con Helm, Cluster Autoscaler y KEDA absorbiendo picos nivel Black Friday.',
+      'CI/CD with Jenkins and CodeDeploy that made deployments 60% faster.': 'CI/CD con Jenkins y CodeDeploy que aceleró un 60 % los despliegues.',
+      'NYC Taxi with Spark': 'NYC Taxi con Spark',
+      'Small browser games I build for fun and to keep learning. Not my day job, but held to the same habits: tests, CI and engines kept apart from the UI.': 'Juegos de navegador pequeños que construyo por diversión y para seguir aprendiendo. No es mi trabajo, pero mantengo los mismos hábitos: tests, CI y motores separados de la UI.',
+      'Available for 100% remote work. Tell me about your data platform and we can take it from there in a call.': 'Disponible para trabajo 100 % remoto. Cuéntame sobre tu plataforma de datos y seguimos desde ahí en una llamada.',
       'UFPR · thesis: CNN vs Vision Transformer for melanoma detection (ISIC 2020)': 'UFPR · tesis: CNN vs Vision Transformer para detección de melanoma (ISIC 2020)'
     },
     it: {
@@ -245,6 +257,19 @@
       'Specialisation in Applied Artificial Intelligence': 'Specializzazione in Intelligenza Artificiale Applicata',
       'AWS certifications': 'Certificazioni AWS',
       'Data security track in progress: Vault, KMS, CDPSE': 'Percorso di sicurezza dei dati in corso: Vault, KMS, CDPSE',
+      'Available for 100% remote roles. Portuguese (native), English and Spanish (professional), Italian (learning).': 'Disponibile per ruoli 100 % remoti. Portoghese (madrelingua), inglese e spagnolo (professionale), italiano (in apprendimento).',
+      'Behavioural scoring that made detection 35% more accurate and helps avoid more than R$5M in fraud a year.': 'Scoring comportamentale che ha reso il rilevamento il 35 % più preciso e aiuta a evitare oltre 5 M R$ di frodi all\'anno.',
+      'A structured data lake that made forensic investigations 50% faster for the fraud team.': 'Un data lake strutturato che ha reso il 50 % più rapide le indagini forensi del team frodi.',
+      'Structured data lake that made forensic investigations 50% faster.': 'Un data lake strutturato che ha reso il 50 % più rapide le indagini forensi del team frodi.',
+      'Fraud services on Kubernetes (EKS) with 99.9%+ availability through peak traffic.': 'Servizi frodi su Kubernetes (EKS) con disponibilità oltre il 99,9 % nei picchi di traffico.',
+      'Right-sizing, Savings Plans and Spot: about 40% off the cloud bill with reliability intact.': 'Right-sizing, Savings Plans e Spot: circa il 40 % in meno sulla bolletta cloud senza perdere affidabilità.',
+      'Behavioural scoring that raised detection accuracy by 35%.': 'Scoring comportamentale che ha aumentato del 35 % la precisione del rilevamento.',
+      'Ran the fraud services on EKS at 99.9%+ availability, with Helm, Cluster Autoscaler and KEDA absorbing Black Friday-level spikes.': 'Gestito i servizi frodi su EKS con disponibilità oltre il 99,9 %, con Helm, Cluster Autoscaler e KEDA ad assorbire picchi da Black Friday.',
+      'CI/CD with Jenkins and CodeDeploy that made deployments 60% faster.': 'CI/CD con Jenkins e CodeDeploy che ha reso i deploy il 60 % più rapidi.',
+      'NYC Taxi with Spark': 'NYC Taxi con Spark',
+      'Small browser games I build for fun and to keep learning. Not my day job, but held to the same habits: tests, CI and engines kept apart from the UI.': 'Piccoli giochi per browser che costruisco per divertimento e per continuare a imparare. Non è il mio lavoro, ma con le stesse abitudini: test, CI e motori separati dalla UI.',
+      'Available for 100% remote work. Tell me about your data platform and we can take it from there in a call.': 'Disponibile per lavoro 100 % remoto. Raccontami della tua piattaforma dati e proseguiamo con una chiamata.',
+
       'UFPR · thesis: CNN vs Vision Transformer for melanoma detection (ISIC 2020)': 'UFPR · tesi: CNN vs Vision Transformer per il rilevamento del melanoma (ISIC 2020)'
     },
     de: {
@@ -365,6 +390,19 @@
       'Specialisation in Applied Artificial Intelligence': 'Weiterbildung in Angewandter Künstlicher Intelligenz',
       'AWS certifications': 'AWS-Zertifizierungen',
       'Data security track in progress: Vault, KMS, CDPSE': 'Laufende Weiterbildung in Datensicherheit: Vault, KMS, CDPSE',
+      'Available for 100% remote roles. Portuguese (native), English and Spanish (professional), Italian (learning).': 'Verfügbar für 100 % Remote-Rollen. Portugiesisch (Muttersprache), Englisch und Spanisch (professionell), Italienisch (lernend).',
+      'Behavioural scoring that made detection 35% more accurate and helps avoid more than R$5M in fraud a year.': 'Verhaltens-Scoring, das die Erkennung um 35 % präziser machte und hilft, jährlich über 5 Mio. R$ Betrug zu verhindern.',
+      'A structured data lake that made forensic investigations 50% faster for the fraud team.': 'Ein strukturierter Data Lake, der forensische Untersuchungen des Betrugsteams um 50 % beschleunigte.',
+      'Structured data lake that made forensic investigations 50% faster.': 'Ein strukturierter Data Lake, der forensische Untersuchungen des Betrugsteams um 50 % beschleunigte.',
+      'Fraud services on Kubernetes (EKS) with 99.9%+ availability through peak traffic.': 'Betrugsdienste auf Kubernetes (EKS) mit über 99,9 % Verfügbarkeit in Spitzenlastzeiten.',
+      'Right-sizing, Savings Plans and Spot: about 40% off the cloud bill with reliability intact.': 'Right-sizing, Savings Plans und Spot: rund 40 % weniger Cloud-Kosten bei gleicher Zuverlässigkeit.',
+      'Behavioural scoring that raised detection accuracy by 35%.': 'Verhaltens-Scoring, das die Erkennungsgenauigkeit um 35 % steigerte.',
+      'Ran the fraud services on EKS at 99.9%+ availability, with Helm, Cluster Autoscaler and KEDA absorbing Black Friday-level spikes.': 'Betrugsdienste auf EKS mit über 99,9 % Verfügbarkeit betrieben, mit Helm, Cluster Autoscaler und KEDA gegen Black-Friday-artige Spitzen.',
+      'CI/CD with Jenkins and CodeDeploy that made deployments 60% faster.': 'CI/CD mit Jenkins und CodeDeploy, das Deployments um 60 % beschleunigte.',
+      'NYC Taxi with Spark': 'NYC Taxi mit Spark',
+      'Small browser games I build for fun and to keep learning. Not my day job, but held to the same habits: tests, CI and engines kept apart from the UI.': 'Kleine Browserspiele, die ich zum Spaß und zum Weiterlernen baue. Nicht mein Beruf, aber mit denselben Gewohnheiten: Tests, CI und Engines getrennt von der UI.',
+      'Available for 100% remote work. Tell me about your data platform and we can take it from there in a call.': 'Verfügbar für 100 % Remote-Arbeit. Erzählen Sie mir von Ihrer Datenplattform, dann gehen wir es in einem Call an.',
+
       'UFPR · thesis: CNN vs Vision Transformer for melanoma detection (ISIC 2020)': 'UFPR · Arbeit: CNN vs Vision Transformer zur Melanomerkennung (ISIC 2020)'
     }
   };
@@ -382,6 +420,13 @@
 
   function norm(text) {
     return text.replace(/\s+/g, ' ').trim();
+  }
+
+  // Decode entities (&amp;, &middot;, …) so keys match textContent.
+  function textFromHtml(html) {
+    var d = document.createElement('div');
+    d.innerHTML = html;
+    return norm(d.textContent);
   }
 
   function lookup(key, lang) {
@@ -416,7 +461,7 @@
     translated.clear();
     if (lang !== 'en') {
       originals.forEach(function (original, el) {
-        var key = norm(original.replace(/<[^>]*>/g, ' '));
+        var key = textFromHtml(original);
         var hasChildren = el.querySelector('*') !== null;
         var translation = lookup(key, lang);
         if (translation === null) return;
